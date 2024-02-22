@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e9b23bac-05b8-40c6-8c05-7676337c00c0}">
+		<property name="assetPath">
+			<value>Songs/fear_of_life.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>44.355918367346938</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{730995b5-eadd-4f06-ac74-56ff8c34765d}</destination>
+		</relationship>
+	</object>
+</objects>

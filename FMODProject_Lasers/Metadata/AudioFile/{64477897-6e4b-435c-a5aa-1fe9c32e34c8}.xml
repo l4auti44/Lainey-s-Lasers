@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{64477897-6e4b-435c-a5aa-1fe9c32e34c8}">
+		<property name="assetPath">
+			<value>Effects/connect.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>9.1167346938775502</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{730995b5-eadd-4f06-ac74-56ff8c34765d}</destination>
+		</relationship>
+	</object>
+</objects>

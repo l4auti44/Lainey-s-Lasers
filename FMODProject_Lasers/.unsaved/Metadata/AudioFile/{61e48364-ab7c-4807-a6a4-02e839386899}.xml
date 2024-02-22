@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{61e48364-ab7c-4807-a6a4-02e839386899}">
+		<property name="assetPath">
+			<value>Songs/charging_into_the_light_2.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>88.659591836734691</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{730995b5-eadd-4f06-ac74-56ff8c34765d}</destination>
+		</relationship>
+	</object>
+</objects>
