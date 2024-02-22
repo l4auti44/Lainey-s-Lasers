@@ -1315,11 +1315,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <coinCollected>k__BackingField:
     Guid:
-      Data1: 1392915820
-      Data2: 1076527048
-      Data3: 1073477258
-      Data4: -1883333771
-    Path: event:/CoinCollected
+      Data1: -421014633
+      Data2: 1329503521
+      Data3: 1067213218
+      Data4: -578032226
+    Path: event:/SFX/Collect
 --- !u!1 &1657650173
 GameObject:
   m_ObjectHideFlags: 0
