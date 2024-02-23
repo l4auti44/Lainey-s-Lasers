@@ -1313,13 +1313,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82f67380e8caef645a2d11eb127d8409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <coinCollected>k__BackingField:
+  <music>k__BackingField:
+    Guid:
+      Data1: -2126475321
+      Data2: 1102754419
+      Data3: -1012127613
+      Data4: 1400919616
+    Path: event:/Music/Song 1
+  <connectTargetLaser>k__BackingField:
+    Guid:
+      Data1: 1841905781
+      Data2: 1198855417
+      Data3: -1950682208
+      Data4: 1488572506
+    Path: event:/SFX/Environment/Connect Target and Laser
+  <disconnectTargetLaser>k__BackingField:
+    Guid:
+      Data1: 1670647669
+      Data2: 1086049002
+      Data3: 1641239467
+      Data4: 2052699631
+    Path: event:/SFX/Environment/Disconnect Target and Laser
+  <buttonSelect>k__BackingField:
+    Guid:
+      Data1: -339956848
+      Data2: 1083463292
+      Data3: -611034433
+      Data4: 803140277
+    Path: event:/SFX/Menus/Button Select
+  <collect>k__BackingField:
     Guid:
       Data1: -421014633
       Data2: 1329503521
       Data3: 1067213218
       Data4: -578032226
     Path: event:/SFX/Player/Collect
+  <levelComplete>k__BackingField:
+    Guid:
+      Data1: 1888303661
+      Data2: 1165018574
+      Data3: 1360104840
+      Data4: 1411776152
+    Path: event:/SFX/Player/Level Complete
+  <playerDeath>k__BackingField:
+    Guid:
+      Data1: 1893320609
+      Data2: 1290176834
+      Data3: -1547589212
+      Data4: -237485547
+    Path: event:/SFX/Player/Player Death
+  <takingDamage>k__BackingField:
+    Guid:
+      Data1: -492934348
+      Data2: 1242571884
+      Data3: 1444456595
+      Data4: -1289645780
+    Path: event:/SFX/Player/Taking Damage
 --- !u!1 &1657650173
 GameObject:
   m_ObjectHideFlags: 0
