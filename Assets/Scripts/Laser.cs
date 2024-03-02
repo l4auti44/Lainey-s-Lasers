@@ -10,7 +10,8 @@ public class Laser : MonoBehaviour
     [SerializeField] private float laserMaxDistance = 30f;
     [SerializeField] private float damage = 15f;
     [SerializeField] private float pushForce = 7f;
-    [SerializeField] private Vector3 pushDirection = new Vector3(0.50f, 0, 1f);
+    [SerializeField] private Vector3 pushDirection = new Vector3(0, 0, 1f);
+    
 
     private bool firstRay = true, hitingTarget = false;
     private GameObject previousHit;
@@ -42,8 +43,8 @@ public class Laser : MonoBehaviour
             // hit: Player
             if (hit.transform.CompareTag("Player"))
             {
-
                 hit.transform.GetComponent<Rigidbody>().AddForce(pushDirection.normalized * pushForce, ForceMode.Force);
+                //hit.transform.GetComponent<Rigidbody>().AddForce(-hit.transform.Find("Orientation").transform.forward * pushForce, ForceMode.Force);
                 hit.transform.GetComponent<HealthSystem>().TakeDamage(damage);
 
 

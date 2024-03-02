@@ -141,7 +141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2676364093436819450}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.70710677, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 6.4799995, y: -5.482907, z: 1.0384874}
   m_LocalScale: {x: 0.5227, y: 0.05415172, z: 0.5227}
   m_ConstrainProportionsScale: 0
@@ -175,6 +175,8 @@ MonoBehaviour:
   laserPivot: {fileID: 2359628930512016673}
   laserMaxDistance: 30
   damage: 20
+  pushForce: 7
+  pushDirection: {x: 0, y: 0, z: 1}
 --- !u!1 &6220513084756048695
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +202,7 @@ Transform:
   m_GameObject: {fileID: 6220513084756048695}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
