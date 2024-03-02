@@ -9,25 +9,25 @@ public class Laser : MonoBehaviour
     [SerializeField] private GameObject laserPivot;
     [SerializeField] private float laserMaxDistance = 30f;
     [SerializeField] private float damage = 15f;
+    [SerializeField] private float pushForce = 7f;
+    [SerializeField] private Vector3 pushDirection = new Vector3(0.50f, 0, 1f);
 
     private bool firstRay = true, hitingTarget = false;
     private GameObject previousHit;
-    private AudioSource damageAudio;
+
     //[SerializeField] private float knockbackStrenght = 4f;
 
     //[SerializeField] private bool DEBUG = false;
     // Start is called before the first frame update
     void Start()
     {
-        damageAudio = GetComponent<AudioSource>();
         laserPivot.transform.localScale = new Vector3(1, laserMaxDistance, 1);
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        RaycastHit hit;   
+        RaycastHit hit;
         Ray ray = new Ray(laserOrigin.position, laserOrigin.up);
         Debug.DrawRay(ray.origin, ray.direction * laserMaxDistance, Color.red);
 
@@ -39,17 +39,16 @@ public class Laser : MonoBehaviour
                 firstRay = false;
             }
             laserPivot.transform.localScale = new Vector3(1, hit.distance, 1);
+            // hit: Player
             if (hit.transform.CompareTag("Player"))
             {
-                //if (!damageAudio.isPlaying && !GameController.isPaused)
-                //{
-                    //damageAudio.Play();
-                //}
-                
-                hit.transform.parent.GetComponent<HealthSystem>().TakeDamage(damage);
+
+                hit.transform.GetComponent<Rigidbody>().AddForce(pushDirection.normalized * pushForce, ForceMode.Force);
+                hit.transform.GetComponent<HealthSystem>().TakeDamage(damage);
 
 
             }
+            //hit: Target
             if (hit.transform.CompareTag("Target"))
             {
                 hitingTarget = true;
@@ -59,6 +58,8 @@ public class Laser : MonoBehaviour
             {
                 hitingTarget = false;
             }
+
+            //Lost target
             if (hit.transform.name != previousHit.name && !hitingTarget)
             {
                 if (previousHit.GetComponent<Target>())
