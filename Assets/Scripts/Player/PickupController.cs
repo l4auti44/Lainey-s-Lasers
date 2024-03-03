@@ -24,6 +24,7 @@ public class PickupController : MonoBehaviour
             if (heldObj == null)
             {
                 RaycastHit hit;
+                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward), Color.green, 2f);
                 if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange))
                 {
                     PickupObject(hit.transform.gameObject);
@@ -62,7 +63,7 @@ public class PickupController : MonoBehaviour
             
             heldObjRB.transform.parent = holdArea;
             heldObj = pickObj;
-            heldObj.layer = 6;
+            heldObj.layer = 8;
         }
     }
 
