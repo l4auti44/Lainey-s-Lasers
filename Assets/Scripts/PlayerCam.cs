@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerCam : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class PlayerCam : MonoBehaviour
 
     float xRotation;
     float yRotation;
+    private Vector2 inputMove;
 
     // Start is called before the first frame update
     void Start()
@@ -23,8 +25,8 @@ public class PlayerCam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
-        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
+        float mouseX = inputMove.x * Time.deltaTime * sensX;
+        float mouseY = inputMove.y * Time.deltaTime * sensY;
 
         yRotation += mouseX;
 
@@ -34,5 +36,10 @@ public class PlayerCam : MonoBehaviour
         //Rotate cam and oritation
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         orientantion.rotation = Quaternion.Euler(0, yRotation, 0);
+    }
+
+    private void OnLook(InputValue inputValue)
+    {
+        inputMove = inputValue.Get<Vector2>();
     }
 }
