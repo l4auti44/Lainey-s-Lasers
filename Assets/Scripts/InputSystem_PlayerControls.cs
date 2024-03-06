@@ -185,9 +185,9 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                 {
                     ""name"": ""LeftJoystick"",
                     ""id"": ""794477d4-173b-47b9-b7d7-e339011a7e3c"",
-                    ""path"": ""2DVector"",
+                    ""path"": ""2DVector(mode=2)"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""StickDeadzone"",
                     ""groups"": """",
                     ""action"": ""Move"",
                     ""isComposite"": true,
@@ -317,9 +317,9 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                 {
                     ""name"": ""Right Stick"",
                     ""id"": ""3874595c-f8e6-4f01-a53f-8ca1352be834"",
-                    ""path"": ""2DVector"",
+                    ""path"": ""2DVector(mode=2)"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""StickDeadzone"",
                     ""groups"": """",
                     ""action"": ""Look"",
                     ""isComposite"": true,
