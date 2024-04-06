@@ -73,6 +73,15 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                     ""initialStateCheck"": true
                 },
                 {
+                    ""name"": ""Look With Controller"",
+                    ""type"": ""Value"",
+                    ""id"": ""1834ab5c-17eb-4df5-a15d-2fe5932c1968"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
                     ""name"": ""Throw"",
                     ""type"": ""Button"",
                     ""id"": ""bad9364e-552f-47da-b871-98def42e6fc0"",
@@ -260,114 +269,15 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""Mouse"",
-                    ""id"": ""94966dc6-c606-4110-8cb1-fcb897ff8d54"",
-                    ""path"": ""2DVector(mode=1)"",
+                    ""name"": """",
+                    ""id"": ""d5dff1db-2978-4caa-af1c-79d3942babd4"",
+                    ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Look"",
-                    ""isComposite"": true,
+                    ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""73e45364-f82d-4046-9eef-474d8f1bae34"",
-                    ""path"": ""<Mouse>/delta/up"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""91e07f96-1269-45c6-836e-ab154d25d14c"",
-                    ""path"": ""<Mouse>/delta/down"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""a0633187-a7fd-46d0-a00d-d509add474a6"",
-                    ""path"": ""<Mouse>/delta/left"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""db997cff-3400-4c61-ac57-36ca6634b697"",
-                    ""path"": ""<Mouse>/delta/right"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Right Stick"",
-                    ""id"": ""3874595c-f8e6-4f01-a53f-8ca1352be834"",
-                    ""path"": ""2DVector(mode=2)"",
-                    ""interactions"": """",
-                    ""processors"": ""StickDeadzone"",
-                    ""groups"": """",
-                    ""action"": ""Look"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""5f1a83db-910e-4eaf-bf73-c4d75f25425b"",
-                    ""path"": ""<Gamepad>/rightStick/up"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""3cbfcade-5463-4b65-91ab-e70e85955fd5"",
-                    ""path"": ""<Gamepad>/rightStick/down"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""b88d20bf-da6e-4b80-b125-94c8fa160bc8"",
-                    ""path"": ""<Gamepad>/rightStick/left"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""1ee41932-4e66-4175-a81e-bc05a512c1d0"",
-                    ""path"": ""<Gamepad>/rightStick/right"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
                 },
                 {
                     ""name"": """",
@@ -390,6 +300,17 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                     ""action"": ""Throw"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7ef994b0-fb44-4d6a-a939-938a0c4d7bec"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look With Controller"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -403,6 +324,7 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
         m_BaseMovement_PickUpPutDown = m_BaseMovement.FindAction("Pick Up / Put Down", throwIfNotFound: true);
         m_BaseMovement_Crouch = m_BaseMovement.FindAction("Crouch", throwIfNotFound: true);
         m_BaseMovement_Look = m_BaseMovement.FindAction("Look", throwIfNotFound: true);
+        m_BaseMovement_LookWithController = m_BaseMovement.FindAction("Look With Controller", throwIfNotFound: true);
         m_BaseMovement_Throw = m_BaseMovement.FindAction("Throw", throwIfNotFound: true);
     }
 
@@ -470,6 +392,7 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
     private readonly InputAction m_BaseMovement_PickUpPutDown;
     private readonly InputAction m_BaseMovement_Crouch;
     private readonly InputAction m_BaseMovement_Look;
+    private readonly InputAction m_BaseMovement_LookWithController;
     private readonly InputAction m_BaseMovement_Throw;
     public struct BaseMovementActions
     {
@@ -480,6 +403,7 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
         public InputAction @PickUpPutDown => m_Wrapper.m_BaseMovement_PickUpPutDown;
         public InputAction @Crouch => m_Wrapper.m_BaseMovement_Crouch;
         public InputAction @Look => m_Wrapper.m_BaseMovement_Look;
+        public InputAction @LookWithController => m_Wrapper.m_BaseMovement_LookWithController;
         public InputAction @Throw => m_Wrapper.m_BaseMovement_Throw;
         public InputActionMap Get() { return m_Wrapper.m_BaseMovement; }
         public void Enable() { Get().Enable(); }
@@ -505,6 +429,9 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
             @Look.started += instance.OnLook;
             @Look.performed += instance.OnLook;
             @Look.canceled += instance.OnLook;
+            @LookWithController.started += instance.OnLookWithController;
+            @LookWithController.performed += instance.OnLookWithController;
+            @LookWithController.canceled += instance.OnLookWithController;
             @Throw.started += instance.OnThrow;
             @Throw.performed += instance.OnThrow;
             @Throw.canceled += instance.OnThrow;
@@ -527,6 +454,9 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
             @Look.started -= instance.OnLook;
             @Look.performed -= instance.OnLook;
             @Look.canceled -= instance.OnLook;
+            @LookWithController.started -= instance.OnLookWithController;
+            @LookWithController.performed -= instance.OnLookWithController;
+            @LookWithController.canceled -= instance.OnLookWithController;
             @Throw.started -= instance.OnThrow;
             @Throw.performed -= instance.OnThrow;
             @Throw.canceled -= instance.OnThrow;
@@ -554,6 +484,7 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
         void OnPickUpPutDown(InputAction.CallbackContext context);
         void OnCrouch(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
+        void OnLookWithController(InputAction.CallbackContext context);
         void OnThrow(InputAction.CallbackContext context);
     }
 }

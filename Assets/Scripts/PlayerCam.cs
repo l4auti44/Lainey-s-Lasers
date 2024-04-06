@@ -5,9 +5,16 @@ using UnityEngine.InputSystem;
 
 public class PlayerCam : MonoBehaviour
 {
+    [Header("Mouse sensibility")]
+    public float sensX_mouse;
+    public float sensY_mouse;
 
-    public float sensX;
-    public float sensY;
+    [Header("Controller sensibility")]
+    public float sensX_cont;
+    public float sensY_cont;
+
+    private float sensX;
+    private float sensY;
 
     public Transform orientantion;
 
@@ -41,5 +48,16 @@ public class PlayerCam : MonoBehaviour
     private void OnLook(InputValue inputValue)
     {
         inputMove = inputValue.Get<Vector2>();
+        sensX = sensX_mouse;
+        sensY = sensY_mouse;
+        
     }
+
+    private void OnLookWithController(InputValue inputValue) 
+    {
+        inputMove = inputValue.Get<Vector2>();
+        sensX = sensX_cont;
+        sensY = sensY_cont;
+    }
+
 }
