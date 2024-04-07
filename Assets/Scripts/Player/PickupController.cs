@@ -19,6 +19,7 @@ public class PickupController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetMouseButtonDown(0))
         {
             if (heldObj == null)
@@ -35,7 +36,7 @@ public class PickupController : MonoBehaviour
                 DropObject();
             }
         }
-
+        */
         if (heldObj != null)
         {
             MoveObject();
@@ -78,4 +79,20 @@ public class PickupController : MonoBehaviour
         
     }
 
+    private void OnPickUpPutDown()
+    {
+        if (heldObj == null)
+        {
+            RaycastHit hit;
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward), Color.green, 2f);
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange))
+            {
+                PickupObject(hit.transform.gameObject);
+            }
+        }
+        else
+        {
+            DropObject();
+        }
+    }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -38,13 +39,15 @@ public class PlayerMovement : MonoBehaviour
 
     public Transform orientation;
 
-    float horizontalInput;
-    float verticalInput;
 
+    Vector2 inputMove;
+    bool jumpingInput = false, crouchingInput = false;
+    private bool crouching = false;
     Vector3 moveDirection;
 
     Rigidbody rb;
     public MovementState state;
+    
 
     public enum MovementState
     {
@@ -69,10 +72,10 @@ public class PlayerMovement : MonoBehaviour
         //ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
 
-        MyInput();
+        MyActions();
         SpeedControl();
         StateHandler();
-        // handle drag 
+        // handle drag
         if (grounded) rb.drag = groundDrag; //(remove this for on ice movement!!)
         else rb.drag = 0f;
     }
@@ -80,29 +83,30 @@ public class PlayerMovement : MonoBehaviour
     {
         MovePlayer();
     }
-    private void MyInput()
+    private void MyActions()
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
 
         //when to jump
-        if (Input.GetKey(jumpKey) && readyToJump && grounded)
+        
+        if (jumpingInput && readyToJump && grounded)
         {
             readyToJump = false;
             Jump();
             Invoke(nameof(ResetJump), jumpCooldown);
         }
-
+        
         //start crouch
-        if (Input.GetKeyDown(crouchKey))
+        if (crouchingInput && !crouching)
         {
+            crouching = true;
             transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
             rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
         }
 
         //stop crouch
-        if (Input.GetKeyUp(crouchKey))
+        if (!crouchingInput && crouching)
         {
+            crouching = false;
             transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
         }
     }
@@ -141,7 +145,7 @@ public class PlayerMovement : MonoBehaviour
     private void MovePlayer()
     {
         //calculate movement direction
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        moveDirection = orientation.forward * inputMove.y + orientation.right * inputMove.x;
 
         //on slope
         if (OnSlope() && !exitingSlope)
@@ -204,7 +208,6 @@ public class PlayerMovement : MonoBehaviour
     private void ResetJump()
     {
         readyToJump = true;
-
         exitingSlope = false;
     }
 
@@ -222,5 +225,22 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 GetSlopeMoveDirection()
     {
         return Vector3.ProjectOnPlane(moveDirection, slopeHit.normal).normalized;
+    }
+
+    private void OnJump()
+    {
+        //press and release
+        jumpingInput = !jumpingInput;
+    }
+
+    private void OnMove(InputValue inputValue)
+    {
+        inputMove = inputValue.Get<Vector2>();
+    }
+
+    private void OnCrouch()
+    {
+        //press and release
+        crouchingInput = !crouchingInput;
     }
 }
