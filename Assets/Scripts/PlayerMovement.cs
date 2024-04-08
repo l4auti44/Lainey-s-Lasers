@@ -8,7 +8,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     private float moveSpeed;
     public float walkSpeed;
-    public float sprintSpeed;
+    private float sprintSpeed;
+    public float crouchSpeed;
 
     public float groundDrag;
 
@@ -18,14 +19,13 @@ public class PlayerMovement : MonoBehaviour
     bool readyToJump = true;
 
     [Header("Crouching")]
-    public float crouchSpeed;
     public float crouchYScale;
+    public float durationCrouchBuff = 3f;
+    public float buffCrouchAmount = 3f;
+    private float crouchBuff = 5f;
     private float startYScale;
+    private float currentTimeCrouchBuff = 0;
 
-    [Header("Keybinds")]
-    public KeyCode jumpKey = KeyCode.Space;
-    public KeyCode sprintKey = KeyCode.LeftShift;
-    public KeyCode crouchKey = KeyCode.LeftControl;
 
     [Header("Ground Check")]
     public float playerHeight;
@@ -42,11 +42,14 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 inputMove;
     bool jumpingInput = false, crouchingInput = false;
-    private bool crouching = false;
+    
     Vector3 moveDirection;
 
     Rigidbody rb;
     public MovementState state;
+
+    private float timer;
+
     
 
     public enum MovementState
@@ -96,17 +99,16 @@ public class PlayerMovement : MonoBehaviour
         }
         
         //start crouch
-        if (crouchingInput && !crouching)
+        if (crouchingInput && state != MovementState.crouching)
         {
-            crouching = true;
             transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
             rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
         }
 
         //stop crouch
-        if (!crouchingInput && crouching)
+        if (!crouchingInput && state == MovementState.crouching)
         {
-            crouching = false;
+            currentTimeCrouchBuff = 0;
             transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
         }
     }
@@ -114,19 +116,22 @@ public class PlayerMovement : MonoBehaviour
     private void StateHandler()
     {
         //Mode - crouching
-        if (Input.GetKey(crouchKey))
+        if (crouchingInput)
         {
             state = MovementState.crouching;
-            moveSpeed = crouchSpeed;
+            currentTimeCrouchBuff += Time.deltaTime;
+            float interpolation = currentTimeCrouchBuff/durationCrouchBuff;
+            crouchBuff = Mathf.Lerp(buffCrouchAmount, 0, interpolation);
+            moveSpeed = crouchSpeed + crouchBuff;
         }
-        
+        /**
         //Mode - sprinting
         if (grounded && Input.GetKey(sprintKey))
         {
             state = MovementState.sprinting;
             moveSpeed = sprintSpeed;
         }
-
+        */
         //Mode - walking
         else if (grounded)
         {
