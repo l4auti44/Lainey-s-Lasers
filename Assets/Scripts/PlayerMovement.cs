@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     private float crouchBuff = 5f;
     private float startYScale;
     private float currentTimeCrouchBuff = 0;
+    private bool somethingAbove = false;
 
 
     [Header("Ground Check")]
@@ -50,6 +51,8 @@ public class PlayerMovement : MonoBehaviour
 
     private float timer;
 
+    [Header("DEBUG")]
+    [SerializeField] private bool DEBUG = false;
     
 
     public enum MovementState
@@ -108,15 +111,25 @@ public class PlayerMovement : MonoBehaviour
         //stop crouch
         if (!crouchingInput && state == MovementState.crouching)
         {
-            currentTimeCrouchBuff = 0;
-            transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
+            //somethingAbove = Physics.SphereCast(transform.position, 2f,Vector3.up, out hit,playerHeight * 0.5f + 0.2f);  TODO: this fixs the something above when exit bug
+            somethingAbove = Physics.Raycast(transform.position, Vector3.up, playerHeight * 0.5f + 0.2f);
+            if (!somethingAbove)
+            {
+                currentTimeCrouchBuff = 0;
+                transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
+            }
+            else
+            {
+                if(DEBUG)Debug.Log("Something is Above");
+            }
+            
         }
     }
 
     private void StateHandler()
     {
         //Mode - crouching
-        if (crouchingInput)
+        if (crouchingInput || somethingAbove)
         {
             state = MovementState.crouching;
             currentTimeCrouchBuff += Time.deltaTime;
