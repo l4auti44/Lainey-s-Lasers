@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     private float startYScale;
     private float currentTimeCrouchBuff = 0;
     private bool somethingAbove = false;
+    private bool buff;
 
 
     [Header("Ground Check")]
@@ -104,6 +105,14 @@ public class PlayerMovement : MonoBehaviour
         //start crouch
         if (crouchingInput && state != MovementState.crouching)
         {
+            if (state == MovementState.walking && moveSpeed == 0)
+            {
+                buff = false;
+            }
+            else
+            {
+                buff = true;
+            }
             transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
             rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
         }
@@ -111,18 +120,14 @@ public class PlayerMovement : MonoBehaviour
         //stop crouch
         if (!crouchingInput && state == MovementState.crouching)
         {
-            //somethingAbove = Physics.SphereCast(transform.position, 2f,Vector3.up, out hit,playerHeight * 0.5f + 0.2f);  TODO: this fixs the something above when exit bug
-            somethingAbove = Physics.Raycast(transform.position, Vector3.up, playerHeight * 0.5f + 0.2f);
+            if (DEBUG) RotaryHeart.Lib.PhysicsExtension.Physics.SphereCast(transform.position, 0.5f, Vector3.up, playerHeight * 0.5f + 0.2f, preview: RotaryHeart.Lib.PhysicsExtension.PreviewCondition.Editor) ;
+            somethingAbove = Physics.SphereCast(transform.position, 0.5f, Vector3.up, out RaycastHit hit, playerHeight * 0.5f + 0.2f);
+            
             if (!somethingAbove)
             {
                 currentTimeCrouchBuff = 0;
                 transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
-            }
-            else
-            {
-                if(DEBUG)Debug.Log("Something is Above");
-            }
-            
+            }           
         }
     }
 
@@ -132,10 +137,19 @@ public class PlayerMovement : MonoBehaviour
         if (crouchingInput || somethingAbove)
         {
             state = MovementState.crouching;
-            currentTimeCrouchBuff += Time.deltaTime;
-            float interpolation = currentTimeCrouchBuff/durationCrouchBuff;
-            crouchBuff = Mathf.Lerp(buffCrouchAmount, 0, interpolation);
-            moveSpeed = crouchSpeed + crouchBuff;
+
+            if (buff)
+            {
+                currentTimeCrouchBuff += Time.deltaTime;
+                float interpolation = currentTimeCrouchBuff / durationCrouchBuff;
+                crouchBuff = Mathf.Lerp(buffCrouchAmount, 0, interpolation);
+                moveSpeed = (crouchSpeed * inputMove.magnitude) + crouchBuff;
+            }
+            else
+            {
+                moveSpeed = (crouchSpeed * inputMove.magnitude);
+            }
+            
         }
         /**
         //Mode - sprinting
@@ -149,7 +163,7 @@ public class PlayerMovement : MonoBehaviour
         else if (grounded)
         {
             state = MovementState.walking;
-            moveSpeed = walkSpeed;
+            moveSpeed = walkSpeed * inputMove.magnitude;
         }
 
         //Mode - Air
