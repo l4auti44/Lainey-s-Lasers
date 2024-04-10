@@ -8,7 +8,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     private float moveSpeed;
     public float walkSpeed;
-    public float sprintSpeed;
+    private float sprintSpeed;
+    public float crouchSpeed;
 
     public float groundDrag;
 
@@ -18,14 +19,15 @@ public class PlayerMovement : MonoBehaviour
     bool readyToJump = true;
 
     [Header("Crouching")]
-    public float crouchSpeed;
     public float crouchYScale;
+    public float durationCrouchBuff = 3f;
+    public float buffCrouchAmount = 3f;
+    private float crouchBuff = 5f;
     private float startYScale;
+    private float currentTimeCrouchBuff = 0;
+    private bool somethingAbove = false;
+    private bool buff;
 
-    [Header("Keybinds")]
-    public KeyCode jumpKey = KeyCode.Space;
-    public KeyCode sprintKey = KeyCode.LeftShift;
-    public KeyCode crouchKey = KeyCode.LeftControl;
 
     [Header("Ground Check")]
     public float playerHeight;
@@ -42,11 +44,16 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 inputMove;
     bool jumpingInput = false, crouchingInput = false;
-    private bool crouching = false;
+    
     Vector3 moveDirection;
 
     Rigidbody rb;
     public MovementState state;
+
+    private float timer;
+
+    [Header("DEBUG")]
+    [SerializeField] private bool DEBUG = false;
     
 
     public enum MovementState
@@ -96,42 +103,67 @@ public class PlayerMovement : MonoBehaviour
         }
         
         //start crouch
-        if (crouchingInput && !crouching)
+        if (crouchingInput && state != MovementState.crouching)
         {
-            crouching = true;
+            if (state == MovementState.walking && moveSpeed == 0)
+            {
+                buff = false;
+            }
+            else
+            {
+                buff = true;
+            }
             transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
             rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
         }
 
         //stop crouch
-        if (!crouchingInput && crouching)
+        if (!crouchingInput && state == MovementState.crouching)
         {
-            crouching = false;
-            transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
+            if (DEBUG) RotaryHeart.Lib.PhysicsExtension.Physics.SphereCast(transform.position, 0.5f, Vector3.up, playerHeight * 0.5f + 0.2f, preview: RotaryHeart.Lib.PhysicsExtension.PreviewCondition.Editor) ;
+            somethingAbove = Physics.SphereCast(transform.position, 0.5f, Vector3.up, out RaycastHit hit, playerHeight * 0.5f + 0.2f);
+            
+            if (!somethingAbove)
+            {
+                currentTimeCrouchBuff = 0;
+                transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
+            }           
         }
     }
 
     private void StateHandler()
     {
         //Mode - crouching
-        if (Input.GetKey(crouchKey))
+        if (crouchingInput || somethingAbove)
         {
             state = MovementState.crouching;
-            moveSpeed = crouchSpeed;
+
+            if (buff)
+            {
+                currentTimeCrouchBuff += Time.deltaTime;
+                float interpolation = currentTimeCrouchBuff / durationCrouchBuff;
+                crouchBuff = Mathf.Lerp(buffCrouchAmount, 0, interpolation);
+                moveSpeed = (crouchSpeed * inputMove.magnitude) + crouchBuff;
+            }
+            else
+            {
+                moveSpeed = (crouchSpeed * inputMove.magnitude);
+            }
+            
         }
-        
+        /**
         //Mode - sprinting
         if (grounded && Input.GetKey(sprintKey))
         {
             state = MovementState.sprinting;
             moveSpeed = sprintSpeed;
         }
-
+        */
         //Mode - walking
         else if (grounded)
         {
             state = MovementState.walking;
-            moveSpeed = walkSpeed;
+            moveSpeed = walkSpeed * inputMove.magnitude;
         }
 
         //Mode - Air
