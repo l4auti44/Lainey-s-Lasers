@@ -1570,6 +1570,8 @@ MonoBehaviour:
   holdArea: {fileID: 134021138}
   pickupRange: 5
   pickupForce: 150
+  throwPower: 1000
+  playerRB: {fileID: 870404692}
 --- !u!114 &963194232
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,30 +13,20 @@ public class PickupController : MonoBehaviour
     [SerializeField] private float pickupRange = 5.0f;
     [SerializeField] private float pickupForce = 150.0f;
 
+    [Header("Throw objects")]
+    [SerializeField] private float throwPower = 500f;
+    private Rigidbody playerRB;
+
     private int previuosLayer;
 
-
+    private void Awake()
+    {
+        playerRB = GameObject.Find("Player").GetComponent<Rigidbody>();
+    }
     // Update is called once per frame
     void Update()
     {
-        /*
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (heldObj == null)
-            {
-                RaycastHit hit;
-                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward), Color.green, 2f);
-                if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange))
-                {
-                    PickupObject(hit.transform.gameObject);
-                }
-            }
-            else
-            {
-                DropObject();
-            }
-        }
-        */
+
         if (heldObj != null)
         {
             MoveObject();
@@ -93,6 +83,30 @@ public class PickupController : MonoBehaviour
         else
         {
             DropObject();
+        }
+    }
+
+    private void OnThrow()
+    {
+        
+        if (heldObj != null)
+        {
+            heldObjRB.useGravity = true;
+            heldObjRB.drag = 1;
+            heldObjRB.constraints = RigidbodyConstraints.None;
+            heldObj.layer = previuosLayer;
+            heldObj.transform.parent = null;
+            if (playerRB.velocity.magnitude > 1)
+            {
+                heldObjRB.AddForce(this.transform.forward * throwPower * (playerRB.velocity.magnitude/4), ForceMode.Force);
+            }
+            else
+            {
+                heldObjRB.AddForce(this.transform.forward * throwPower, ForceMode.Force);
+            }
+            
+            heldObj = null;
+
         }
     }
 }

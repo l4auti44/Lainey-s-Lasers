@@ -282,8 +282,8 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                 {
                     ""name"": """",
                     ""id"": ""30fefc2b-53a6-47ab-8d1b-7924b34d8f43"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
-                    ""interactions"": """",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": ""Press(behavior=1)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Throw"",
@@ -293,8 +293,8 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                 {
                     ""name"": """",
                     ""id"": ""44fc8085-2119-45a0-ab93-3a5c24696505"",
-                    ""path"": ""<Keyboard>/g"",
-                    ""interactions"": """",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": ""Press(behavior=1)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Throw"",
