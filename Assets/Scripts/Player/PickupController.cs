@@ -17,13 +17,18 @@ public class PickupController : MonoBehaviour
     [SerializeField] private float throwPower = 500f;
     [SerializeField] private float throwBonusPower = 100f;
     private PlayerMovement playerMovement;
+    private Rigidbody playerRB;
     private Vector2 playerInput;
 
     private int previuosLayer;
 
+    [Header("BEBUG")]
+    [SerializeField] private bool DEBUG = false;
+
     private void Awake()
     {
-        playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
+        playerRB = GameObject.Find("Player").GetComponent<Rigidbody>();
+        playerMovement = playerRB.transform.GetComponent<PlayerMovement>();
     }
     // Update is called once per frame
     void Update()
@@ -99,9 +104,11 @@ public class PickupController : MonoBehaviour
             heldObj.layer = previuosLayer;
             heldObj.transform.parent = null;
             playerInput = playerMovement.inputMove;
+            float throwBonus = (throwBonusPower/playerMovement.walkSpeed) * playerRB.velocity.magnitude; //value 7 is the player sprint speed
             Vector3 force = transform.forward * throwPower;
-            Vector3 bonusForce = transform.forward * (throwBonusPower * playerInput.y) + transform.right * (throwBonusPower * playerInput.x);
+            Vector3 bonusForce = transform.forward * (throwBonus * playerInput.y) + transform.right * (throwBonus * playerInput.x);
             heldObjRB.AddForce(force + bonusForce, ForceMode.Force);
+            if (DEBUG) Debug.Log("Bonus force: " + (playerInput * throwBonus).ToString());  
             heldObj = null;
 
         }
