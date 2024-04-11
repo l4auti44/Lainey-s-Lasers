@@ -15,18 +15,19 @@ public class PickupController : MonoBehaviour
 
     [Header("Throw objects")]
     [SerializeField] private float throwPower = 500f;
-    private Rigidbody playerRB;
+    [SerializeField] private float throwBonusPower = 100f;
+    private PlayerMovement playerMovement;
+    private Vector2 playerInput;
 
     private int previuosLayer;
 
     private void Awake()
     {
-        playerRB = GameObject.Find("Player").GetComponent<Rigidbody>();
+        playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
     // Update is called once per frame
     void Update()
     {
-
         if (heldObj != null)
         {
             MoveObject();
@@ -91,20 +92,16 @@ public class PickupController : MonoBehaviour
         
         if (heldObj != null)
         {
+            
             heldObjRB.useGravity = true;
             heldObjRB.drag = 1;
             heldObjRB.constraints = RigidbodyConstraints.None;
             heldObj.layer = previuosLayer;
             heldObj.transform.parent = null;
-            if (playerRB.velocity.magnitude > 1)
-            {
-                heldObjRB.AddForce(this.transform.forward * throwPower * (playerRB.velocity.magnitude/4), ForceMode.Force);
-            }
-            else
-            {
-                heldObjRB.AddForce(this.transform.forward * throwPower, ForceMode.Force);
-            }
-            
+            playerInput = playerMovement.inputMove;
+            Vector3 force = transform.forward * throwPower;
+            Vector3 bonusForce = transform.forward * (throwBonusPower * playerInput.y) + transform.right * (throwBonusPower * playerInput.x);
+            heldObjRB.AddForce(force + bonusForce, ForceMode.Force);
             heldObj = null;
 
         }

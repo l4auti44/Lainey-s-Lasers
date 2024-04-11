@@ -1385,6 +1385,7 @@ MonoBehaviour:
     m_Bits: 64
   maxSlopeAngle: 40
   orientation: {fileID: 992190688}
+  inputMove: {x: 0, y: 0}
   state: 0
   DEBUG: 1
 --- !u!114 &870404695
@@ -1571,7 +1572,8 @@ MonoBehaviour:
   pickupRange: 5
   pickupForce: 150
   throwPower: 1000
-  playerRB: {fileID: 870404692}
+  throwBonusPower: 500
+  DEBUG: 1
 --- !u!114 &963194232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3686,6 +3688,10 @@ PrefabInstance:
     - target: {fileID: 2676364093436819450, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
       propertyPath: m_Name
       value: Laser
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717177954968772922, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
+      propertyPath: DEBUG
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

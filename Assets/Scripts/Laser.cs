@@ -5,20 +5,22 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
+    [Header("Laser stats")]
     [SerializeField] private Transform laserOrigin;
     [SerializeField] private GameObject laserPivot;
     [SerializeField] private float laserMaxDistance = 30f;
     [SerializeField] private float damage = 15f;
+    [Header("Laser Push")]
     [SerializeField] private float pushForce = 7f;
     [SerializeField] private Vector3 pushDirection = new Vector3(0, 0, 1f);
+    [Header("DEBUG")]
+    [SerializeField] private bool DEBUG = false;
     
 
     private bool firstRay = true, hitingTarget = false;
     private GameObject previousHit;
 
     //[SerializeField] private float knockbackStrenght = 4f;
-
-    //[SerializeField] private bool DEBUG = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +32,7 @@ public class Laser : MonoBehaviour
     {
         RaycastHit hit;
         Ray ray = new Ray(laserOrigin.position, laserOrigin.up);
-        Debug.DrawRay(ray.origin, ray.direction * laserMaxDistance, Color.red);
+        if(DEBUG) Debug.DrawRay(ray.origin, ray.direction * laserMaxDistance, Color.red);
 
         if (Physics.Raycast(ray, out hit, laserMaxDistance))
         {
@@ -43,7 +45,7 @@ public class Laser : MonoBehaviour
             // hit: Player
             if (hit.transform.CompareTag("Player"))
             {
-                hit.transform.GetComponent<Rigidbody>().AddForce(pushDirection.normalized * pushForce, ForceMode.Force);
+                hit.transform.GetComponent<Rigidbody>().AddForce(transform.forward * pushForce, ForceMode.Force);
                 //hit.transform.GetComponent<Rigidbody>().AddForce(-hit.transform.Find("Orientation").transform.forward * pushForce, ForceMode.Force);
                 hit.transform.GetComponent<HealthSystem>().TakeDamage(damage);
 

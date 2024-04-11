@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform orientation;
 
 
-    Vector2 inputMove;
+    [HideInInspector] public Vector2 inputMove;
     bool jumpingInput = false, crouchingInput = false;
     
     Vector3 moveDirection;
