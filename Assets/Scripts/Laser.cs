@@ -12,15 +12,14 @@ public class Laser : MonoBehaviour
     [SerializeField] private float damage = 15f;
     [Header("Laser Push")]
     [SerializeField] private float pushForce = 7f;
-    [SerializeField] private Vector3 pushDirection = new Vector3(0, 0, 1f);
     [Header("DEBUG")]
     [SerializeField] private bool DEBUG = false;
     
 
     private bool firstRay = true, hitingTarget = false;
     private GameObject previousHit;
-
-    //[SerializeField] private float knockbackStrenght = 4f;
+    private float timerForPush = 0.1f;
+ 
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +31,11 @@ public class Laser : MonoBehaviour
     {
         RaycastHit hit;
         Ray ray = new Ray(laserOrigin.position, laserOrigin.up);
-        if(DEBUG) Debug.DrawRay(ray.origin, ray.direction * laserMaxDistance, Color.red);
+        
+        if (DEBUG) RotaryHeart.Lib.PhysicsExtension.Physics.SphereCast(ray, 0.1f, maxDistance: laserMaxDistance,RotaryHeart.Lib.PhysicsExtension.PreviewCondition.Editor);
 
-        if (Physics.Raycast(ray, out hit, laserMaxDistance))
+        
+        if (Physics.SphereCast(ray, 0.1f, out hit, laserMaxDistance))
         {
             if (firstRay)
             {
@@ -45,8 +46,18 @@ public class Laser : MonoBehaviour
             // hit: Player
             if (hit.transform.CompareTag("Player"))
             {
-                hit.transform.GetComponent<Rigidbody>().AddForce(transform.forward * pushForce, ForceMode.Force);
-                //hit.transform.GetComponent<Rigidbody>().AddForce(-hit.transform.Find("Orientation").transform.forward * pushForce, ForceMode.Force);
+                Transform playerPos = hit.transform.Find("Orientation").transform;
+                Vector3 forceDirection = playerPos.position - hit.point;
+                if (timerForPush <= 0)
+                {
+                    hit.transform.GetComponent<Rigidbody>().AddForce(forceDirection * pushForce, ForceMode.Force);
+                    timerForPush = 0.1f;
+                }
+                else
+                {
+                    timerForPush -= Time.deltaTime;
+                }
+                
                 hit.transform.GetComponent<HealthSystem>().TakeDamage(damage);
 
 

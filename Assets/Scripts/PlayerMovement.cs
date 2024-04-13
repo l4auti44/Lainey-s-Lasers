@@ -210,8 +210,9 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocity = rb.velocity.normalized * moveSpeed;
             
         }
-        //limiting speed on ground or in air
-        else
+        //limiting speed in air
+        
+        else if(!grounded)
         {
             Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
@@ -222,7 +223,7 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
             }
         }
-
+        
         
 
     }
