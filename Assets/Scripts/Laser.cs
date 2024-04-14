@@ -18,11 +18,13 @@ public class Laser : MonoBehaviour
 
     private bool firstRay = true, hitingTarget = false;
     private GameObject previousHit;
-    public float timerForPush = 0.1f;
+    [SerializeField] private float timerForPush = 0.1f;
+    private float _timerForPush;
  
     // Start is called before the first frame update
     void Start()
     {
+        _timerForPush = timerForPush;
         laserPivot.transform.localScale = new Vector3(1, laserMaxDistance, 1);
     }
 
@@ -48,14 +50,14 @@ public class Laser : MonoBehaviour
             {
                 Transform playerPos = hit.transform.Find("Orientation").transform;
                 Vector3 forceDirection = playerPos.position - hit.point;
-                if (timerForPush <= 0)
+                if (_timerForPush <= 0)
                 {
                     hit.transform.GetComponent<Rigidbody>().AddForce(forceDirection * pushForce, ForceMode.Force);
-                    timerForPush = 0.1f;
+                    _timerForPush = timerForPush;
                 }
                 else
                 {
-                    timerForPush -= Time.deltaTime;
+                    _timerForPush -= Time.deltaTime;
                 }
                 
                 hit.transform.GetComponent<HealthSystem>().TakeDamage(damage);
