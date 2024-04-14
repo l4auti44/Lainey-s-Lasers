@@ -18,7 +18,7 @@ public class Laser : MonoBehaviour
 
     private bool firstRay = true, hitingTarget = false;
     private GameObject previousHit;
-    private float timerForPush = 0.1f;
+    public float timerForPush = 0.1f;
  
     // Start is called before the first frame update
     void Start()
