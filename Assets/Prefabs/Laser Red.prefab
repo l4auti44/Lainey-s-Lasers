@@ -175,8 +175,9 @@ MonoBehaviour:
   laserPivot: {fileID: 2359628930512016673}
   laserMaxDistance: 30
   damage: 20
-  pushForce: 7
-  pushDirection: {x: 0, y: 0, z: 1}
+  pushForce: 95
+  DEBUG: 0
+  timerForPush: 0.01
 --- !u!1 &6220513084756048695
 GameObject:
   m_ObjectHideFlags: 0
