@@ -63,7 +63,7 @@ public class HealthSystem : MonoBehaviour
     {
         if (DEBUG) Debug.Log("Player Died!");
 
-        //GameObject.Find("GameController").GetComponent<GameController>().Die();
+        GameObject.Find("GameManager").GetComponent<GameController>().Die();
 
     }
 
