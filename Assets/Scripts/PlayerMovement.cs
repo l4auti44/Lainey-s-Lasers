@@ -173,7 +173,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        EventManager.Player.OnSpeedChanged.Invoke(this, moveSpeed);
+        
 
 
     }
@@ -204,6 +204,8 @@ public class PlayerMovement : MonoBehaviour
 
         //turn gravity off while on slope
         rb.useGravity = !OnSlope();
+
+        EventManager.Player.OnSpeedChanged.Invoke(this, rb.velocity.magnitude);
     }
 
     private void SpeedControl()
