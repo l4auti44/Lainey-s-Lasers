@@ -171,6 +171,11 @@ public class PlayerMovement : MonoBehaviour
         {
             state = MovementState.air;
         }
+
+
+        EventManager.Player.OnSpeedChanged.Invoke(this, moveSpeed);
+
+
     }
 
 
