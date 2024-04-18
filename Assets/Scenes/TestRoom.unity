@@ -2045,8 +2045,8 @@ MonoBehaviour:
   jumpCooldown: 0.25
   airMultiplier: 0.5
   crouchYScale: 0.5
-  durationCrouchBuff: 1.8
-  buffCrouchAmount: 3.4
+  durationCrouchBuff: 1.9
+  buffCrouchAmount: 5.7
   playerHeight: 2
   whatIsGround:
     serializedVersion: 2
@@ -4535,8 +4535,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a8f2f282ff42d64d8411b72a92023b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthLabel: {fileID: 70424995}
-  speedLabel: {fileID: 1224132108}
 --- !u!1001 &1698654628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6019,7 +6017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6559472027162948715, guid: 0286dfa69b5330240aecb81e08f6585f, type: 3}
       propertyPath: damage
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6559472027162948715, guid: 0286dfa69b5330240aecb81e08f6585f, type: 3}
       propertyPath: pushForce
