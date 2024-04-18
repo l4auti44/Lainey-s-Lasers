@@ -1902,15 +1902,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a7af616ce9d92547b131944cbe4b74e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 7
-  crouchSpeed: 3.5
+  walkSpeed: 5.5
+  crouchSpeed: 2.9
   groundDrag: 5
   jumpForce: 12
   jumpCooldown: 0.25
   airMultiplier: 0.5
   crouchYScale: 0.5
-  durationCrouchBuff: 2
-  buffCrouchAmount: 5
+  durationCrouchBuff: 1.8
+  buffCrouchAmount: 3.4
   playerHeight: 2
   whatIsGround:
     serializedVersion: 2
@@ -3741,7 +3741,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57560972e5ad9f84c944bf0f739fc5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPaused: 0
 --- !u!4 &1401083388
 Transform:
   m_ObjectHideFlags: 0
