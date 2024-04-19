@@ -87,6 +87,8 @@ public class PlayerMovement : MonoBehaviour
         // handle drag
         if (grounded) rb.drag = groundDrag; //(remove this for on ice movement!!)
         else rb.drag = 0f;
+
+        EventManager.Player.OnSpeedChanged.Invoke(this, new Vector3(rb.velocity.x, 0f, rb.velocity.z).magnitude);
     }
     private void FixedUpdate()
     {
@@ -192,7 +194,7 @@ public class PlayerMovement : MonoBehaviour
         if (OnSlope() && !exitingSlope)
         {
             rb.AddForce(GetSlopeMoveDirection() * moveSpeed * 20f, ForceMode.Force);
-            if (rb.velocity.y > 0)
+            if (rb.velocity.y > 0 || rb.velocity.y < 0)
             {
                 rb.AddForce(Vector3.down * 80f, ForceMode.Force); // keep the player constantly on the slope without bouncing
             }
@@ -209,21 +211,20 @@ public class PlayerMovement : MonoBehaviour
         //turn gravity off while on slope
         rb.useGravity = !OnSlope();
 
-        EventManager.Player.OnSpeedChanged.Invoke(this, rb.velocity.magnitude);
+        
     }
 
     private void SpeedControl()
     {
         //limiting speed on slope
-        if (OnSlope() && !exitingSlope)
+        if (OnSlope() && !exitingSlope && !crouchingInput)
         {
             if (rb.velocity.magnitude > moveSpeed)
                 rb.velocity = rb.velocity.normalized * moveSpeed;
-            
         }
-        //limiting speed in air
-        
-        else if(!grounded)
+
+        //limiting speed on ground or in air
+        else
         {
             Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
