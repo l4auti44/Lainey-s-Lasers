@@ -58,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
     public enum MovementState
     {
+        idle,
         walking,
         sprinting,
         air,
@@ -162,7 +163,8 @@ public class PlayerMovement : MonoBehaviour
         //Mode - walking
         else if (grounded)
         {
-            state = MovementState.walking;
+            if (rb.velocity.magnitude > 0.4f) state = MovementState.walking;
+            else state = MovementState.idle;
             moveSpeed = walkSpeed * inputMove.magnitude;
         }
 
@@ -172,7 +174,7 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.air;
         }
 
-
+        EventManager.Player.OnMovementStateChanged.Invoke(this, state);
         
 
 
