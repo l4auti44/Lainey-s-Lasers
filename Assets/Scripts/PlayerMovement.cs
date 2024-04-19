@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
-    public MovementState state;
+    private MovementState state;
 
     private float timer;
 
@@ -78,8 +78,9 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
+        //if (DEBUG) RotaryHeart.Lib.PhysicsExtension.Physics.SphereCast(transform.position, 0.5f, Vector3.down, playerHeight * 0.4f, preview: RotaryHeart.Lib.PhysicsExtension.PreviewCondition.Editor);
 
+        grounded = Physics.SphereCast(transform.position, 0.5f,Vector3.down, out RaycastHit hit, playerHeight * 0.4f, whatIsGround);
         MyActions();
         SpeedControl();
         StateHandler();
@@ -171,6 +172,7 @@ public class PlayerMovement : MonoBehaviour
         //Mode - Air
         else
         {
+            moveSpeed = walkSpeed;
             state = MovementState.air;
         }
 
@@ -251,14 +253,18 @@ public class PlayerMovement : MonoBehaviour
     {
         readyToJump = true;
         exitingSlope = false;
+        jumpingInput = false;
     }
 
     private bool OnSlope()
     {
+        //if (DEBUG) RotaryHeart.Lib.PhysicsExtension.Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, RotaryHeart.Lib.PhysicsExtension.PreviewCondition.Editor);
         if (Physics.Raycast(transform.position, Vector3.down, out slopeHit, playerHeight * 0.5f + 0.3f))
         {
             float angle = Vector3.Angle(Vector3.up, slopeHit.normal);
+            //if (DEBUG) Debug.Log("slope: " + (angle < maxSlopeAngle && angle != 0).ToString());
             return angle < maxSlopeAngle && angle != 0;
+            
         }
 
         return false;
@@ -273,6 +279,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //press and release
         jumpingInput = !jumpingInput;
+            
     }
 
     private void OnMove(InputValue inputValue)

@@ -33,7 +33,7 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                     ""id"": ""5afc7636-2889-4bcf-bd80-0c2cefdea333"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": ""Press(behavior=2)"",
+                    ""interactions"": ""Press"",
                     ""initialStateCheck"": false
                 },
                 {
