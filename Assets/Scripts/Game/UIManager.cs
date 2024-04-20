@@ -57,6 +57,7 @@ public class UIManager : MonoBehaviour
         EventManager.Player.OnMovementStateChanged += UpdateLaineyImage;
         
         EventManager.Game.OnWin += UpdateWinText;
+        EventManager.Game.OnHitless += HitlessCondition;
     }
 
     private void OnDisable()
@@ -68,8 +69,14 @@ public class UIManager : MonoBehaviour
         EventManager.Player.OnMovementStateChanged -= UpdateLaineyImage;
 
         EventManager.Game.OnWin -= UpdateWinText;
+        EventManager.Game.OnHitless -= HitlessCondition;
     }
 
+    private void HitlessCondition(Component component)
+    {
+        DisableLaineyImages();
+        laineyStates[5].gameObject.SetActive(true);
+    }
     private void UpdateWinText(Component component)
     {
         titlePauseMenu.SetText("YOU WIN!");
@@ -79,6 +86,11 @@ public class UIManager : MonoBehaviour
     private void UpdateHealth(Component component, float health)
     {
         healthLabel.SetText(health.ToString());
+        if (health <= 0)
+        {
+            DisableLaineyImages();
+            laineyStates[4].gameObject.SetActive(true);
+        }
     }
 
     private void TakingDamage(Component component)

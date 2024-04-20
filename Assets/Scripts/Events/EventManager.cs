@@ -19,6 +19,7 @@ public static class EventManager
     public class GameEvents
     {
         public UnityAction<Component> OnWin;
+        public UnityAction<Component> OnHitless;
     }
     
 }

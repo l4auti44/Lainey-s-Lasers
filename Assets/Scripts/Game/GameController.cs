@@ -70,7 +70,7 @@ public class GameController : MonoBehaviour
     {
         if (healthSyst.playerHealth == 100f)
         {
-            //HITLESS
+            EventManager.Game.OnHitless.Invoke(this);
         }
 
         //Time Achievement
