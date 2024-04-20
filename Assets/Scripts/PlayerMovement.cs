@@ -177,9 +177,8 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed = walkSpeed;
             state = MovementState.air;
         }
-
-        EventManager.Player.OnMovementStateChanged.Invoke(this, state);
-        
+        if (!SceneController.isPaused) 
+            EventManager.Player.OnMovementStateChanged.Invoke(this, state);
 
 
     }
