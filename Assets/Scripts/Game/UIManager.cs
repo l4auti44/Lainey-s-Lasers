@@ -8,11 +8,20 @@ public class UIManager : MonoBehaviour
 {
     private TMP_Text healthLabel;
     private TMP_Text speedLabel;
+    private TMP_Text titlePauseMenu;
     private RawImage damageIndicator;
     private GameObject lainey;
     private RawImage[] laineyStates;
+    private GameObject resumeButton;
+
+    private void Awake()
+    {
+        resumeButton = GameObject.Find("ResumeButton");
+        titlePauseMenu = GameObject.Find("TitlePauseMenu").GetComponent<TMP_Text>();
+    }
     private void Start()
     {
+        
         lainey = GameObject.Find("Lainey");
         GetLaineyImages();
         DisableLaineyImages();
@@ -46,6 +55,8 @@ public class UIManager : MonoBehaviour
         EventManager.Player.OnNoTakingDamage += NoTakingDamage;
         EventManager.Player.OnSpeedChanged += UpdateSpeed;
         EventManager.Player.OnMovementStateChanged += UpdateLaineyImage;
+        
+        EventManager.Game.OnWin += UpdateWinText;
     }
 
     private void OnDisable()
@@ -55,8 +66,15 @@ public class UIManager : MonoBehaviour
         EventManager.Player.OnNoTakingDamage -= NoTakingDamage;
         EventManager.Player.OnSpeedChanged -= UpdateSpeed;
         EventManager.Player.OnMovementStateChanged -= UpdateLaineyImage;
+
+        EventManager.Game.OnWin -= UpdateWinText;
     }
 
+    private void UpdateWinText(Component component)
+    {
+        titlePauseMenu.SetText("YOU WIN!");
+        resumeButton.SetActive(false);
+    }
 
     private void UpdateHealth(Component component, float health)
     {

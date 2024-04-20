@@ -66,7 +66,7 @@ public class GameController : MonoBehaviour
 
 
 
-    public void Win()
+    private void Win(Component component)
     {
         if (healthSyst.playerHealth == 100f)
         {
@@ -80,6 +80,17 @@ public class GameController : MonoBehaviour
         }
         SceneController.TriggerPause();
     }
+
+    private void OnEnable()
+    {
+        EventManager.Game.OnWin += Win;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.Game.OnWin -= Win;
+    }
+
 
 
 }
