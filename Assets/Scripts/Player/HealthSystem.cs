@@ -36,23 +36,22 @@ public class HealthSystem : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        if (!isTakingDamage)
+
+        EventManager.Player.OnTakingDamage.Invoke(this);
+        if (DEBUG) Debug.Log("taking damage");
+        playerHealth -= damage;
+        if (playerHealth < 0)
         {
-            EventManager.Player.OnTakingDamage.Invoke(this);
-            if (DEBUG) Debug.Log("taking damage");
-            playerHealth -= damage;
-            if (playerHealth < 0)
-            {
-                playerHealth = 0;
-            }
-            EventManager.Player.OnHealthChanged.Invoke(this, playerHealth);
-            isTakingDamage = true;
-            if (playerHealth <= 0)
-            {
-                Die();
-                playerHealth = 0;
-            }
+            playerHealth = 0;
         }
+        EventManager.Player.OnHealthChanged.Invoke(this, playerHealth);
+        isTakingDamage = true;
+        if (playerHealth <= 0)
+        {
+            Die();
+            playerHealth = 0;
+        }
+        
     }
     
     public void Heal(float amount)

@@ -12,6 +12,10 @@ public class Laser : MonoBehaviour
     [SerializeField] private float damage = 15f;
     [Header("Laser Push")]
     [SerializeField] private float pushForce = 7f;
+    [Header("Cooldown")]
+    private bool cooldown = false;
+    [SerializeField] private float cooldownTimer = 0.5f;
+    private float _cooldownTimer = 0.5f;
     [Header("DEBUG")]
     [SerializeField] private bool DEBUG = false;
     
@@ -24,6 +28,7 @@ public class Laser : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _cooldownTimer = cooldownTimer;
         _timerForPush = timerForPush;
         laserPivot.transform.localScale = new Vector3(1, laserMaxDistance, 1);
     }
@@ -59,8 +64,19 @@ public class Laser : MonoBehaviour
                 {
                     _timerForPush -= Time.deltaTime;
                 }
+
+
+                if (!cooldown)
+                {
+                    //take hit
+                    hit.transform.GetComponent<HealthSystem>().TakeDamage(damage);
+                    cooldown = true;
+                }
                 
-                hit.transform.GetComponent<HealthSystem>().TakeDamage(damage);
+                
+                    
+                
+                
 
 
             }
@@ -90,6 +106,15 @@ public class Laser : MonoBehaviour
         else
         {
             laserPivot.transform.localScale = new Vector3(1, laserMaxDistance, 1);
+        }
+        if (cooldown)
+        {
+            _cooldownTimer -= Time.deltaTime;
+            if (_cooldownTimer <= 0)
+            {
+                cooldown = false;
+                _cooldownTimer = cooldownTimer;
+            }
         }
     }
 }
