@@ -83,6 +83,7 @@ public class PlayerMovement : MonoBehaviour
         //if (DEBUG) RotaryHeart.Lib.PhysicsExtension.Physics.SphereCast(transform.position, 0.5f, Vector3.down, playerHeight * 0.4f, preview: RotaryHeart.Lib.PhysicsExtension.PreviewCondition.Editor);
 
         grounded = Physics.SphereCast(transform.position, 0.5f,Vector3.down, out RaycastHit hit, playerHeight * 0.4f, whatIsGround);
+        
         MyActions();
         SpeedControl();
         StateHandler();
@@ -285,8 +286,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnJump()
     {
-        //press and release
-        jumpingInput = !jumpingInput;
+        if (!SceneController.isPaused)
+            //press and release
+            jumpingInput = !jumpingInput;
             
     }
 

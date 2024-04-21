@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class HealthSystem : MonoBehaviour
     }
     private void Update()
     {
-        if (isTakingDamage && !GameController.isPaused)
+        if (isTakingDamage && !SceneController.isPaused)
         {
             _invicibilityTime -= Time.deltaTime;
             if (_invicibilityTime <= 0)

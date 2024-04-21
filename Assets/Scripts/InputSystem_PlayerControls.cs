@@ -89,6 +89,15 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""b4df8d77-68dd-4dc0-9edf-42fc45cbccfa"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -311,6 +320,28 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                     ""action"": ""Look With Controller"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b1a6fe02-d7c8-4021-bbd5-89fa8cdbef84"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ce5ccfab-6ed5-4a34-a543-b2fd2c8c7290"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -326,6 +357,7 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
         m_BaseMovement_Look = m_BaseMovement.FindAction("Look", throwIfNotFound: true);
         m_BaseMovement_LookWithController = m_BaseMovement.FindAction("Look With Controller", throwIfNotFound: true);
         m_BaseMovement_Throw = m_BaseMovement.FindAction("Throw", throwIfNotFound: true);
+        m_BaseMovement_Pause = m_BaseMovement.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -394,6 +426,7 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
     private readonly InputAction m_BaseMovement_Look;
     private readonly InputAction m_BaseMovement_LookWithController;
     private readonly InputAction m_BaseMovement_Throw;
+    private readonly InputAction m_BaseMovement_Pause;
     public struct BaseMovementActions
     {
         private @InputSystem_PlayerControls m_Wrapper;
@@ -405,6 +438,7 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
         public InputAction @Look => m_Wrapper.m_BaseMovement_Look;
         public InputAction @LookWithController => m_Wrapper.m_BaseMovement_LookWithController;
         public InputAction @Throw => m_Wrapper.m_BaseMovement_Throw;
+        public InputAction @Pause => m_Wrapper.m_BaseMovement_Pause;
         public InputActionMap Get() { return m_Wrapper.m_BaseMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -435,6 +469,9 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
             @Throw.started += instance.OnThrow;
             @Throw.performed += instance.OnThrow;
             @Throw.canceled += instance.OnThrow;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         private void UnregisterCallbacks(IBaseMovementActions instance)
@@ -460,6 +497,9 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
             @Throw.started -= instance.OnThrow;
             @Throw.performed -= instance.OnThrow;
             @Throw.canceled -= instance.OnThrow;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         public void RemoveCallbacks(IBaseMovementActions instance)
@@ -486,5 +526,6 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
         void OnLook(InputAction.CallbackContext context);
         void OnLookWithController(InputAction.CallbackContext context);
         void OnThrow(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }

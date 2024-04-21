@@ -8,12 +8,12 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     private GameObject pauseMenu;
-    static public bool isPaused = false;
     [HideInInspector] public float timer;
 
 
     private GameObject player;
     private HealthSystem healthSyst;
+
 
     private void Awake()
     {
@@ -50,10 +50,7 @@ public class GameController : MonoBehaviour
             Cursor.visible = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape) && healthSyst.playerHealth > 0)
-        {
-            SceneController.TriggerPause();
-        }
+
     }
 
     public void Die()
@@ -91,6 +88,14 @@ public class GameController : MonoBehaviour
         EventManager.Game.OnWin -= Win;
     }
 
+    private void OnPause()
+    {
 
+        if (healthSyst.playerHealth > 0)
+        {
+            SceneController.TriggerPause();
+        }
+
+    }
 
 }
