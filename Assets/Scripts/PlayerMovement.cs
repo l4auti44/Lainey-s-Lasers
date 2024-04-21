@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     private float currentTimeCrouchBuff = 0;
     private bool somethingAbove = false;
     private bool buff;
+    [Tooltip("Define a variable to control the exponential growth rate")]
+    public float exponentialGrowthRateBuff = 0.1f;
 
 
     [Header("Ground Check")]
@@ -145,10 +147,16 @@ public class PlayerMovement : MonoBehaviour
             if (buff)
             {
                 currentTimeCrouchBuff += Time.deltaTime;
+
                 float interpolation = currentTimeCrouchBuff / durationCrouchBuff;
                 crouchBuff = Mathf.Lerp(buffCrouchAmount, 0, interpolation);
-                moveSpeed = (crouchSpeed * inputMove.magnitude) + crouchBuff;
-            }
+
+                // Calculate the exponential change in speed of movement
+                float exponentialChange = Mathf.Pow(2, exponentialGrowthRateBuff * currentTimeCrouchBuff);
+
+                // Apply exponential change to motion
+                moveSpeed = (crouchSpeed* inputMove.magnitude) + crouchBuff* exponentialChange;
+}
             else
             {
                 moveSpeed = (crouchSpeed * inputMove.magnitude);
