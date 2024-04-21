@@ -299,7 +299,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCrouch()
     {
-        //press and release
-        crouchingInput = !crouchingInput;
+        if (!SceneController.isPaused)
+            //press and release
+            crouchingInput = !crouchingInput;
     }
 }

@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -13,7 +14,7 @@ public class GameController : MonoBehaviour
 
     private GameObject player;
     private HealthSystem healthSyst;
-
+    private bool winCondition = false;
 
     private void Awake()
     {
@@ -75,6 +76,7 @@ public class GameController : MonoBehaviour
         {
             
         }
+        winCondition = true;
         SceneController.TriggerPause();
     }
 
@@ -91,7 +93,7 @@ public class GameController : MonoBehaviour
     private void OnPause()
     {
 
-        if (healthSyst.playerHealth > 0)
+        if (healthSyst.playerHealth > 0 && !winCondition)
         {
             SceneController.TriggerPause();
         }
