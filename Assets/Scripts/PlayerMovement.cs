@@ -112,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
         //start crouch
         if (crouchingInput && state != MovementState.crouching)
         {
-            if (state == MovementState.walking && moveSpeed == 0)
+            if (state == MovementState.idle && moveSpeed == 0)
             {
                 buff = false;
             }
