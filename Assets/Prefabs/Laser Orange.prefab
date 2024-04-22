@@ -110,11 +110,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5717177954968772922, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
       propertyPath: damage
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5717177954968772922, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
       propertyPath: pushForce
-      value: 220
+      value: 190
       objectReference: {fileID: 0}
     - target: {fileID: 5717177954968772922, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
       propertyPath: timerForPush

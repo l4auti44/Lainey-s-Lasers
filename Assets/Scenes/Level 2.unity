@@ -137,10 +137,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 248155400}
     m_Modifications:
     - target: {fileID: 1840458973580812183, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.05415173
-      objectReference: {fileID: 0}
-    - target: {fileID: 1840458973580812183, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.38
       objectReference: {fileID: 0}
@@ -183,14 +179,6 @@ PrefabInstance:
     - target: {fileID: 2676364093436819450, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
       propertyPath: m_Name
       value: Laser (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5717177954968772922, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
-      propertyPath: pushDirection.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5717177954968772922, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
-      propertyPath: pushDirection.z
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1091,10 +1079,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 248155400}
     m_Modifications:
     - target: {fileID: 1840458973580812183, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.05415173
-      objectReference: {fileID: 0}
-    - target: {fileID: 1840458973580812183, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.38
       objectReference: {fileID: 0}
@@ -1137,14 +1121,6 @@ PrefabInstance:
     - target: {fileID: 2676364093436819450, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
       propertyPath: m_Name
       value: Laser (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5717177954968772922, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
-      propertyPath: pushDirection.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5717177954968772922, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
-      propertyPath: pushDirection.z
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2001,10 +1977,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 248155400}
     m_Modifications:
     - target: {fileID: 1840458973580812183, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.05415173
-      objectReference: {fileID: 0}
-    - target: {fileID: 1840458973580812183, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.38
       objectReference: {fileID: 0}
@@ -2047,14 +2019,6 @@ PrefabInstance:
     - target: {fileID: 2676364093436819450, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
       propertyPath: m_Name
       value: Laser (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5717177954968772922, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
-      propertyPath: pushDirection.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5717177954968772922, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
-      propertyPath: pushDirection.z
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3340,10 +3304,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 248155400}
     m_Modifications:
     - target: {fileID: 1840458973580812183, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.05415173
-      objectReference: {fileID: 0}
-    - target: {fileID: 1840458973580812183, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.48
       objectReference: {fileID: 0}
@@ -3386,14 +3346,6 @@ PrefabInstance:
     - target: {fileID: 2676364093436819450, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
       propertyPath: m_Name
       value: Laser (38)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5717177954968772922, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
-      propertyPath: pushDirection.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5717177954968772922, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
-      propertyPath: pushDirection.z
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -143,7 +143,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 6.4799995, y: -5.482907, z: 1.0384874}
-  m_LocalScale: {x: 0.5227, y: 0.05415172, z: 0.5227}
+  m_LocalScale: {x: 0.5227, y: 0.05415173, z: 0.5227}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1537450471730118383}
@@ -174,8 +174,9 @@ MonoBehaviour:
   laserOrigin: {fileID: 1537450471730118383}
   laserPivot: {fileID: 2359628930512016673}
   laserMaxDistance: 30
-  damage: 20
-  pushForce: 95
+  damage: 5
+  pushForce: 80
+  cooldownTimer: 0.3
   DEBUG: 0
   timerForPush: 0.01
 --- !u!1 &6220513084756048695
