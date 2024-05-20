@@ -4972,6 +4972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TargetMovingPlataform
       objectReference: {fileID: 0}
+    - target: {fileID: 7019766943324052829, guid: fe71346e8bf1c2445b70792b33e726cd, type: 3}
+      propertyPath: plataform
+      value: 
+      objectReference: {fileID: 2047625630}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15195,6 +15199,11 @@ Transform:
   - {fileID: 423846863}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2047625630 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8107541796687412259, guid: 656db549052891b40848c60c73600c2e, type: 3}
+  m_PrefabInstance: {fileID: 467702514}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2057884053 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6678160047367239656, guid: a5936ed4d2a02314ea6a235cd3334b93, type: 3}
