@@ -98,6 +98,15 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Sliding"",
+                    ""type"": ""Button"",
+                    ""id"": ""57d5a579-cffb-48ea-abee-205cdc69c0f2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press(behavior=2)"",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -258,7 +267,7 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                 {
                     ""name"": """",
                     ""id"": ""6b76448b-a83a-47f5-89f5-a8dbc9b2ebc9"",
-                    ""path"": ""<Keyboard>/ctrl"",
+                    ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -342,6 +351,17 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                     ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""602f150b-d3d4-402f-a362-c12bbb89a382"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sliding"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -358,6 +378,7 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
         m_BaseMovement_LookWithController = m_BaseMovement.FindAction("Look With Controller", throwIfNotFound: true);
         m_BaseMovement_Throw = m_BaseMovement.FindAction("Throw", throwIfNotFound: true);
         m_BaseMovement_Pause = m_BaseMovement.FindAction("Pause", throwIfNotFound: true);
+        m_BaseMovement_Sliding = m_BaseMovement.FindAction("Sliding", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -427,6 +448,7 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
     private readonly InputAction m_BaseMovement_LookWithController;
     private readonly InputAction m_BaseMovement_Throw;
     private readonly InputAction m_BaseMovement_Pause;
+    private readonly InputAction m_BaseMovement_Sliding;
     public struct BaseMovementActions
     {
         private @InputSystem_PlayerControls m_Wrapper;
@@ -439,6 +461,7 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
         public InputAction @LookWithController => m_Wrapper.m_BaseMovement_LookWithController;
         public InputAction @Throw => m_Wrapper.m_BaseMovement_Throw;
         public InputAction @Pause => m_Wrapper.m_BaseMovement_Pause;
+        public InputAction @Sliding => m_Wrapper.m_BaseMovement_Sliding;
         public InputActionMap Get() { return m_Wrapper.m_BaseMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -472,6 +495,9 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
+            @Sliding.started += instance.OnSliding;
+            @Sliding.performed += instance.OnSliding;
+            @Sliding.canceled += instance.OnSliding;
         }
 
         private void UnregisterCallbacks(IBaseMovementActions instance)
@@ -500,6 +526,9 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;
+            @Sliding.started -= instance.OnSliding;
+            @Sliding.performed -= instance.OnSliding;
+            @Sliding.canceled -= instance.OnSliding;
         }
 
         public void RemoveCallbacks(IBaseMovementActions instance)
@@ -527,5 +556,6 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
         void OnLookWithController(InputAction.CallbackContext context);
         void OnThrow(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
+        void OnSliding(InputAction.CallbackContext context);
     }
 }

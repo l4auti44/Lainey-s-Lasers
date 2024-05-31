@@ -76,6 +76,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Sliding",
+                    "type": "Button",
+                    "id": "57d5a579-cffb-48ea-abee-205cdc69c0f2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -236,7 +245,7 @@
                 {
                     "name": "",
                     "id": "6b76448b-a83a-47f5-89f5-a8dbc9b2ebc9",
-                    "path": "<Keyboard>/ctrl",
+                    "path": "<Keyboard>/c",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -318,6 +327,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "602f150b-d3d4-402f-a362-c12bbb89a382",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sliding",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

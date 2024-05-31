@@ -11,7 +11,7 @@ public static class EventManager
         public UnityAction<Component> OnTakingDamage;
         public UnityAction<Component> OnNoTakingDamage;
         public UnityAction<Component, float> OnSpeedChanged;
-        public UnityAction<Component, PlayerMovement.MovementState> OnMovementStateChanged;
+        public UnityAction<Component, PlayerMovementAdvanced.MovementState> OnMovementStateChanged;
 
         //public UnityAction<Component> OnRunning;
     }

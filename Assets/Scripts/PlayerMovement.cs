@@ -84,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
 
         grounded = Physics.SphereCast(transform.position, 0.5f,Vector3.down, out RaycastHit hit, playerHeight * 0.4f, whatIsGround);
         
-        MyActions();
+        MyInputs();
         SpeedControl();
         StateHandler();
         // handle drag
@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
     {
         MovePlayer();
     }
-    private void MyActions()
+    private void MyInputs()
     {
 
         //when to jump
@@ -186,8 +186,8 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed = walkSpeed;
             state = MovementState.air;
         }
-        if (!SceneController.isPaused) 
-            EventManager.Player.OnMovementStateChanged.Invoke(this, state);
+        //if (!SceneController.isPaused) 
+            //EventManager.Player.OnMovementStateChanged.Invoke(this, state);
 
 
     }
