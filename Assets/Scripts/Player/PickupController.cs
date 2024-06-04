@@ -16,7 +16,7 @@ public class PickupController : MonoBehaviour
     [Header("Throw objects")]
     [SerializeField] private float throwPower = 500f;
     [SerializeField] private float throwBonusPower = 100f;
-    private PlayerMovement playerMovement;
+    private PlayerMovementAdvanced playerMovement;
     private Rigidbody playerRB;
     private Vector2 playerInput;
 
@@ -28,7 +28,7 @@ public class PickupController : MonoBehaviour
     private void Awake()
     {
         playerRB = GameObject.Find("Player").GetComponent<Rigidbody>();
-        playerMovement = playerRB.transform.GetComponent<PlayerMovement>();
+        playerMovement = playerRB.transform.GetComponent<PlayerMovementAdvanced>();
     }
     // Update is called once per frame
     void Update()

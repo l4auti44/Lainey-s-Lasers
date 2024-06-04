@@ -362,6 +362,17 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                     ""action"": ""Sliding"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""91cd1751-3e7e-4b86-9a12-9d15e2748b76"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sliding"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }

@@ -47,8 +47,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
     [HideInInspector] public Vector2 inputMove;
     private bool jumpingInput = false, crouchingInput = false;
 
-    float horizontalInput;
-    float verticalInput;
 
     Vector3 moveDirection;
 
@@ -104,8 +102,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
     private void MyInput()
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
+
 
         // when to jump
         if(jumpingInput && readyToJump && grounded)
@@ -218,7 +215,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     private void MovePlayer()
     {
         // calculate movement direction
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        moveDirection = orientation.forward * inputMove.y + orientation.right * inputMove.x;
 
         // on slope
         if (OnSlope() && !exitingSlope)
