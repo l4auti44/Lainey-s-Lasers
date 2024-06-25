@@ -158,7 +158,12 @@ public class PlayerMovementAdvanced : MonoBehaviour
         else if (grounded)
         {
             if (rb.velocity.magnitude > 0.4f) state = MovementState.walking;
-            else state = MovementState.idle;
+            else
+            {
+                state = MovementState.idle;
+                StopAllCoroutines();
+            }
+                
             desiredMoveSpeed = walkSpeed;
         }
 
@@ -169,6 +174,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         }
 
         // check if desiredMoveSpeed has changed drastically
+        Debug.Log(Mathf.Abs(desiredMoveSpeed - lastDesiredMoveSpeed) > 4f);
         if(Mathf.Abs(desiredMoveSpeed - lastDesiredMoveSpeed) > 4f && moveSpeed != 0)
         {
             StopAllCoroutines();
