@@ -13,7 +13,7 @@ public class Sliding : MonoBehaviour
     [Header("Sliding")]
     public float maxSlideTime;
     public float slideForce;
-    private float slideTimer;
+    //private float slideTimer;
 
     public float slideYScale;
     private float startYScale;
@@ -58,7 +58,7 @@ public class Sliding : MonoBehaviour
         playerObj.localScale = new Vector3(playerObj.localScale.x, slideYScale, playerObj.localScale.z);
         rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
 
-        slideTimer = maxSlideTime;
+        //slideTimer = maxSlideTime;
     }
 
     private void SlidingMovement()
@@ -70,7 +70,7 @@ public class Sliding : MonoBehaviour
         {
             rb.AddForce(inputDirection.normalized * slideForce, ForceMode.Force);
 
-            slideTimer -= Time.deltaTime;
+            //slideTimer -= Time.deltaTime;
         }
 
         // sliding down a slope
@@ -79,8 +79,8 @@ public class Sliding : MonoBehaviour
             rb.AddForce(pm.GetSlopeMoveDirection(inputDirection) * slideForce, ForceMode.Force);
         }
 
-        if (slideTimer <= 0 && !pm.somethingAbove)
-            StopSlide();
+        //if (slideTimer <= 0 && !pm.somethingAbove)
+            //StopSlide();
     }
 
     private void StopSlide()
