@@ -29,7 +29,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public float crouchSpeed;
     public float crouchYScale;
     private float startYScale;
-    private bool somethingAbove = false;
+    [HideInInspector] public bool somethingAbove = false;
 
     [Header("Ground Check")]
     public float playerHeight;

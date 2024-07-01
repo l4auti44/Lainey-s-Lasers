@@ -41,7 +41,7 @@ public class Sliding : MonoBehaviour
         if (slidingInput && (horizontalInput != 0 || verticalInput != 0) && !pm.sliding)
             StartSlide();
 
-        if (!slidingInput && pm.sliding)
+        if (!slidingInput && pm.sliding && !pm.somethingAbove)
             StopSlide();
     }
 
@@ -79,7 +79,7 @@ public class Sliding : MonoBehaviour
             rb.AddForce(pm.GetSlopeMoveDirection(inputDirection) * slideForce, ForceMode.Force);
         }
 
-        if (slideTimer <= 0)
+        if (slideTimer <= 0 && !pm.somethingAbove)
             StopSlide();
     }
 
