@@ -3281,6 +3281,11 @@ MonoBehaviour:
   airMultiplier: 0.5
   crouchSpeed: 2.9
   crouchYScale: 0.5
+  somethingAbove: 0
+  exponentialGrowthRateBuff: 0.1
+  currentTimeCrouchBuff: 0
+  durationCrouchBuff: 3
+  buffCrouchAmount: 5
   playerHeight: 2
   whatIsGround:
     serializedVersion: 2

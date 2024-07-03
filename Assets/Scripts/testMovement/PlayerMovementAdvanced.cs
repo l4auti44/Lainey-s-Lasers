@@ -31,6 +31,17 @@ public class PlayerMovementAdvanced : MonoBehaviour
     private float startYScale;
     [HideInInspector] public bool somethingAbove = false;
 
+    
+    
+
+    [Header("Sliding")]
+    [Tooltip("Define a variable to control the exponential growth rate")]
+    public float exponentialGrowthRateBuff = 0.1f;
+    [HideInInspector] public float currentTimeCrouchBuff = 0;
+    public float durationCrouchBuff = 3f;
+    public float buffCrouchAmount = 3f;
+    private float crouchBuff = 5f;
+
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask whatIsGround;
@@ -144,7 +155,20 @@ public class PlayerMovementAdvanced : MonoBehaviour
                 desiredMoveSpeed = slideSpeed;
 
             else
-                desiredMoveSpeed = sprintSpeed;
+            {
+                currentTimeCrouchBuff += Time.deltaTime;
+
+                float interpolation = currentTimeCrouchBuff / durationCrouchBuff;
+                crouchBuff = Mathf.Lerp(buffCrouchAmount, 0, interpolation);
+
+                // Calculate the exponential change in speed of movement
+                float exponentialChange = Mathf.Pow(2, exponentialGrowthRateBuff * currentTimeCrouchBuff);
+
+                // Apply exponential change to motion
+                desiredMoveSpeed = crouchSpeed + crouchBuff * exponentialChange;
+                //desiredMoveSpeed = sprintSpeed;
+            }
+                
         }
 
         // Mode - Crouching
@@ -174,7 +198,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
         }
 
         // check if desiredMoveSpeed has changed drastically
-        Debug.Log(Mathf.Abs(desiredMoveSpeed - lastDesiredMoveSpeed) > 4f);
         if(Mathf.Abs(desiredMoveSpeed - lastDesiredMoveSpeed) > 4f && moveSpeed != 0)
         {
             StopAllCoroutines();

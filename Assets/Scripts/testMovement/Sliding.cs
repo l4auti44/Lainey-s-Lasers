@@ -86,7 +86,7 @@ public class Sliding : MonoBehaviour
     private void StopSlide()
     {
         pm.sliding = false;
-
+        pm.currentTimeCrouchBuff = 0;
         playerObj.localScale = new Vector3(playerObj.localScale.x, startYScale, playerObj.localScale.z);
     }
 
