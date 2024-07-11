@@ -11,9 +11,7 @@ public class Sliding : MonoBehaviour
     private PlayerMovementAdvanced pm;
 
     [Header("Sliding")]
-    public float maxSlideTime;
-    public float slideForce;
-    //private float slideTimer;
+
 
     public float slideYScale;
     private float startYScale;
@@ -54,7 +52,7 @@ public class Sliding : MonoBehaviour
     {
         
 
-        if (rb.velocity.z <= 0 && pm.state == PlayerMovementAdvanced.MovementState.idle)
+        if (rb.velocity.magnitude <= 0 && pm.state == PlayerMovementAdvanced.MovementState.idle)
         {
             pm.crouching = true;
             pm.sliding = false;
@@ -78,7 +76,7 @@ public class Sliding : MonoBehaviour
         // sliding normal
         if(!pm.OnSlope() || rb.velocity.y > -0.1f)
         {
-            rb.AddForce(inputDirection.normalized * slideForce, ForceMode.Force);
+            rb.AddForce(inputDirection.normalized, ForceMode.Force);
 
             //slideTimer -= Time.deltaTime;
         }
@@ -86,7 +84,7 @@ public class Sliding : MonoBehaviour
         // sliding down a slope
         else
         {
-            rb.AddForce(pm.GetSlopeMoveDirection(inputDirection) * slideForce, ForceMode.Force);
+            rb.AddForce(pm.GetSlopeMoveDirection(inputDirection), ForceMode.Force);
         }
 
         //if (slideTimer <= 0 && !pm.somethingAbove)

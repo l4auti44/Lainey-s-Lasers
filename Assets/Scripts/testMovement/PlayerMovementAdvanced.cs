@@ -9,7 +9,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     [HideInInspector] public float moveSpeed;
     public float walkSpeed;
     public float sprintSpeed;
-    public float slideSpeed;
+    public float maxSlopeSpeed;
 
     private float desiredMoveSpeed;
     private float lastDesiredMoveSpeed;
@@ -148,7 +148,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
             state = MovementState.sliding;
 
             if (OnSlope() && rb.velocity.y < 0.1f)
-                desiredMoveSpeed = slideSpeed;
+                desiredMoveSpeed = maxSlopeSpeed;
 
             else
             {
@@ -181,6 +181,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
             else
             {
                 state = MovementState.idle;
+                desiredMoveSpeed = 0;
                 StopAllCoroutines();
             }
                 

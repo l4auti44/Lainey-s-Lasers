@@ -3254,10 +3254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orientation: {fileID: 992190688}
   playerObj: {fileID: 1202700745}
-  maxSlideTime: 1
-  slideForce: 200
   slideYScale: 0.5
-  slideKey: 306
 --- !u!114 &870404698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3270,9 +3267,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff3b051063697cf4d8cb06659a085dc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 0
   walkSpeed: 5.5
   sprintSpeed: 7
-  slideSpeed: 25
+  maxSlopeSpeed: 25
   speedIncreaseMultiplier: 1.2
   slopeIncreaseMultiplier: 1.8
   groundDrag: 5
@@ -3282,6 +3280,7 @@ MonoBehaviour:
   crouchSpeed: 2.9
   crouchYScale: 0.5
   somethingAbove: 0
+  crouching: 0
   exponentialGrowthRateBuff: 0.1
   currentTimeCrouchBuff: 0
   durationCrouchBuff: 3
@@ -3294,6 +3293,7 @@ MonoBehaviour:
   orientation: {fileID: 992190688}
   inputMove: {x: 0, y: 0}
   DEBUG: 0
+  state: 0
   sliding: 0
 --- !u!4 &885260060 stripped
 Transform:
