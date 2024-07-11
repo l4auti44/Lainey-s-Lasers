@@ -3270,9 +3270,9 @@ MonoBehaviour:
   moveSpeed: 0
   walkSpeed: 5.5
   sprintSpeed: 7
-  maxSlopeSpeed: 25
+  maxSlopeSpeed: 20
   speedIncreaseMultiplier: 1.2
-  slopeIncreaseMultiplier: 1.8
+  slopeIncreaseMultiplier: 0.9
   groundDrag: 5
   jumpForce: 12
   jumpCooldown: 0.1
