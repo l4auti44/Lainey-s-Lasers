@@ -19,7 +19,6 @@ public class Sliding : MonoBehaviour
     private float startYScale;
 
     [Header("Input")]
-    public KeyCode slideKey = KeyCode.LeftControl;
     private float horizontalInput;
     private float verticalInput;
 
@@ -38,10 +37,10 @@ public class Sliding : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        if (slidingInput && (horizontalInput != 0 || verticalInput != 0) && !pm.sliding)
+        if (slidingInput && !pm.sliding && !pm.crouching)
             StartSlide();
 
-        if (!slidingInput && pm.sliding && !pm.somethingAbove)
+        if (!slidingInput && (pm.sliding || pm.crouching) && !pm.somethingAbove)
             StopSlide();
     }
 
@@ -53,12 +52,23 @@ public class Sliding : MonoBehaviour
 
     private void StartSlide()
     {
-        pm.sliding = true;
+        
+
+        if (rb.velocity.z <= 0 && pm.state == PlayerMovementAdvanced.MovementState.idle)
+        {
+            pm.crouching = true;
+            pm.sliding = false;
+        }
+        else
+        {
+            pm.sliding = true;
+            pm.crouching = false;
+        }
 
         playerObj.localScale = new Vector3(playerObj.localScale.x, slideYScale, playerObj.localScale.z);
         rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
-
-        //slideTimer = maxSlideTime;
+        
+        
     }
 
     private void SlidingMovement()
@@ -86,6 +96,7 @@ public class Sliding : MonoBehaviour
     private void StopSlide()
     {
         pm.sliding = false;
+        pm.crouching = false;
         pm.currentTimeCrouchBuff = 0;
         playerObj.localScale = new Vector3(playerObj.localScale.x, startYScale, playerObj.localScale.z);
     }

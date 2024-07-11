@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovementAdvanced : MonoBehaviour
 {
     [Header("Movement")]
-    private float moveSpeed;
+    [HideInInspector] public float moveSpeed;
     public float walkSpeed;
     public float sprintSpeed;
     public float slideSpeed;
@@ -30,6 +30,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public float crouchYScale;
     private float startYScale;
     [HideInInspector] public bool somethingAbove = false;
+    [HideInInspector] public bool crouching = false;
 
     
     
@@ -56,7 +57,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public Transform orientation;
 
     [HideInInspector] public Vector2 inputMove;
-    private bool jumpingInput = false, crouchingInput = false;
+    private bool jumpingInput = false;
 
 
     Vector3 moveDirection;
@@ -65,7 +66,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
     [SerializeField] private bool DEBUG = false;
 
-    private MovementState state;
+    [HideInInspector] public MovementState state;
     public enum MovementState
     {
         idle,
@@ -125,14 +126,9 @@ public class PlayerMovementAdvanced : MonoBehaviour
             Invoke(nameof(ResetJump), jumpCooldown);
         }
 
-        // start crouch
-        if (crouchingInput)
-        {
-            transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
-        }
 
         // stop crouch
-        if (!crouchingInput && state != MovementState.crouching)
+        if (!crouching && state != MovementState.crouching)
         {
             if (DEBUG) RotaryHeart.Lib.PhysicsExtension.Physics.SphereCast(transform.position, 0.5f, Vector3.up, playerHeight * 0.5f + 0.2f, preview: RotaryHeart.Lib.PhysicsExtension.PreviewCondition.Editor);
             somethingAbove = Physics.SphereCast(transform.position, 0.5f, Vector3.up, out RaycastHit hit, playerHeight * 0.5f + 0.2f);
@@ -172,7 +168,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         }
 
         // Mode - Crouching
-        else if (crouchingInput)
+        else if (crouching)
         {
             state = MovementState.crouching;
             desiredMoveSpeed = crouchSpeed;
@@ -336,10 +332,4 @@ public class PlayerMovementAdvanced : MonoBehaviour
         inputMove = inputValue.Get<Vector2>();
     }
 
-    private void OnCrouch()
-    {
-        if (!SceneController.isPaused)
-            //press and release
-            crouchingInput = !crouchingInput;
-    }
 }

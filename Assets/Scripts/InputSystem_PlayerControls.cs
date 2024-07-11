@@ -55,15 +55,6 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Crouch"",
-                    ""type"": ""Button"",
-                    ""id"": ""f775de1a-4d9b-4205-a868-b4d2e0e3725f"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press(behavior=2)"",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Look"",
                     ""type"": ""Value"",
                     ""id"": ""82acffc8-ad0f-4038-9488-f2795b6d2f69"",
@@ -266,28 +257,6 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                 },
                 {
                     ""name"": """",
-                    ""id"": ""6b76448b-a83a-47f5-89f5-a8dbc9b2ebc9"",
-                    ""path"": ""<Keyboard>/c"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Crouch"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""6ba872da-e327-4146-91bc-2e8991771b0a"",
-                    ""path"": ""<Gamepad>/leftTrigger"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Crouch"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""d5dff1db-2978-4caa-af1c-79d3942babd4"",
                     ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
@@ -384,7 +353,6 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
         m_BaseMovement_Jump = m_BaseMovement.FindAction("Jump", throwIfNotFound: true);
         m_BaseMovement_Move = m_BaseMovement.FindAction("Move", throwIfNotFound: true);
         m_BaseMovement_PickUpPutDown = m_BaseMovement.FindAction("Pick Up / Put Down", throwIfNotFound: true);
-        m_BaseMovement_Crouch = m_BaseMovement.FindAction("Crouch", throwIfNotFound: true);
         m_BaseMovement_Look = m_BaseMovement.FindAction("Look", throwIfNotFound: true);
         m_BaseMovement_LookWithController = m_BaseMovement.FindAction("Look With Controller", throwIfNotFound: true);
         m_BaseMovement_Throw = m_BaseMovement.FindAction("Throw", throwIfNotFound: true);
@@ -454,7 +422,6 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
     private readonly InputAction m_BaseMovement_Jump;
     private readonly InputAction m_BaseMovement_Move;
     private readonly InputAction m_BaseMovement_PickUpPutDown;
-    private readonly InputAction m_BaseMovement_Crouch;
     private readonly InputAction m_BaseMovement_Look;
     private readonly InputAction m_BaseMovement_LookWithController;
     private readonly InputAction m_BaseMovement_Throw;
@@ -467,7 +434,6 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
         public InputAction @Jump => m_Wrapper.m_BaseMovement_Jump;
         public InputAction @Move => m_Wrapper.m_BaseMovement_Move;
         public InputAction @PickUpPutDown => m_Wrapper.m_BaseMovement_PickUpPutDown;
-        public InputAction @Crouch => m_Wrapper.m_BaseMovement_Crouch;
         public InputAction @Look => m_Wrapper.m_BaseMovement_Look;
         public InputAction @LookWithController => m_Wrapper.m_BaseMovement_LookWithController;
         public InputAction @Throw => m_Wrapper.m_BaseMovement_Throw;
@@ -491,9 +457,6 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
             @PickUpPutDown.started += instance.OnPickUpPutDown;
             @PickUpPutDown.performed += instance.OnPickUpPutDown;
             @PickUpPutDown.canceled += instance.OnPickUpPutDown;
-            @Crouch.started += instance.OnCrouch;
-            @Crouch.performed += instance.OnCrouch;
-            @Crouch.canceled += instance.OnCrouch;
             @Look.started += instance.OnLook;
             @Look.performed += instance.OnLook;
             @Look.canceled += instance.OnLook;
@@ -522,9 +485,6 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
             @PickUpPutDown.started -= instance.OnPickUpPutDown;
             @PickUpPutDown.performed -= instance.OnPickUpPutDown;
             @PickUpPutDown.canceled -= instance.OnPickUpPutDown;
-            @Crouch.started -= instance.OnCrouch;
-            @Crouch.performed -= instance.OnCrouch;
-            @Crouch.canceled -= instance.OnCrouch;
             @Look.started -= instance.OnLook;
             @Look.performed -= instance.OnLook;
             @Look.canceled -= instance.OnLook;
@@ -562,7 +522,6 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
         void OnJump(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
         void OnPickUpPutDown(InputAction.CallbackContext context);
-        void OnCrouch(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
         void OnLookWithController(InputAction.CallbackContext context);
         void OnThrow(InputAction.CallbackContext context);
