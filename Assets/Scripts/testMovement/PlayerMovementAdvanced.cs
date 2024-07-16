@@ -322,7 +322,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
     private void OnJump()
     {
-        if (!SceneController.isPaused)
+        if (!SceneController.isPaused && grounded)
             //press and release
             jumpingInput = !jumpingInput;
 
