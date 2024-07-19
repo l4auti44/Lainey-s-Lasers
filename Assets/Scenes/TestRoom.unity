@@ -3375,8 +3375,8 @@ MonoBehaviour:
   moveSpeed: 0
   walkSpeed: 5.5
   sprintSpeed: 7
-  maxSlopeSpeed: 18
-  speedIncreaseMultiplier: 1.2
+  maxSlopeSpeed: 30
+  speedIncreaseMultiplier: 1.5
   slopeIncreaseMultiplier: 0.9
   groundDrag: 5
   jumpForce: 12
@@ -3395,6 +3395,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   maxSlopeAngle: 40
+  slopeAngleChangeSpeed: 50
   orientation: {fileID: 992190688}
   inputMove: {x: 0, y: 0}
   DEBUG: 0

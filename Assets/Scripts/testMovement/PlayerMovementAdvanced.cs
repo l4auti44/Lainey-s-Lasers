@@ -52,7 +52,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public float maxSlopeAngle;
     private RaycastHit slopeHit;
     private bool exitingSlope;
-    
+    [SerializeField] private float slopeAngleChangeSpeed = 50f;
 
     public Transform orientation;
 
@@ -225,7 +225,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
             if (OnSlope())
             {
                 float slopeAngle = Vector3.Angle(Vector3.up, slopeHit.normal);
-                float slopeAngleIncrease = 1 + (slopeAngle / 90f);
+                float slopeAngleIncrease = 1 + (slopeAngle / (slopeAngleChangeSpeed - slopeAngle));
 
                 time += Time.deltaTime * speedIncreaseMultiplier * slopeIncreaseMultiplier * slopeAngleIncrease;
             }
