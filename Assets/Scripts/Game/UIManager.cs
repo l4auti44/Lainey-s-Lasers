@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
 {
     private TMP_Text healthLabel;
     private TMP_Text speedLabel;
+    private TMP_Text stateLabel;
     private TMP_Text titlePauseMenu;
     private RawImage damageIndicator;
     private GameObject lainey;
@@ -27,6 +28,7 @@ public class UIManager : MonoBehaviour
         DisableLaineyImages();
         healthLabel = GameObject.Find("HealthLabel").GetComponent<TMP_Text>();
         speedLabel = GameObject.Find("SpeedLabel").GetComponent<TMP_Text>();
+        stateLabel = GameObject.Find("StateLabel").GetComponent<TMP_Text>();
         damageIndicator = GameObject.Find("DamageIndicator").GetComponent<RawImage>();
         damageIndicator.color = new Color(255, 255, 255, 0f);
     }
@@ -108,25 +110,33 @@ public class UIManager : MonoBehaviour
         speedLabel.SetText(speed.ToString("0.00"));
     }
 
-    private void UpdateLaineyImage(Component component, PlayerMovement.MovementState state)
+    private void UpdateLaineyImage(Component component, PlayerMovementAdvanced.MovementState state)
     {
         DisableLaineyImages();
         switch(state)
         {
-            case PlayerMovement.MovementState.idle:
+            case PlayerMovementAdvanced.MovementState.idle:
                 laineyStates[0].gameObject.SetActive(true);
+                stateLabel.SetText("Idle");
                 break;
 
-            case PlayerMovement.MovementState.walking:
+            case PlayerMovementAdvanced.MovementState.walking:
                 laineyStates[1].gameObject.SetActive(true);
+                stateLabel.SetText("Walking");
                 break;
 
-            case PlayerMovement.MovementState.crouching:
+            case PlayerMovementAdvanced.MovementState.crouching:
                 laineyStates[2].gameObject.SetActive(true);
+                stateLabel.SetText("Crouching");
                 break;
 
-            case PlayerMovement.MovementState.air:
+            case PlayerMovementAdvanced.MovementState.air:
                 laineyStates[3].gameObject.SetActive(true);
+                stateLabel.SetText("Air");
+                break;
+            case PlayerMovementAdvanced.MovementState.sliding:
+                laineyStates[2].gameObject.SetActive(true);
+                stateLabel.SetText("Sliding");
                 break;
             default:
                 break;
