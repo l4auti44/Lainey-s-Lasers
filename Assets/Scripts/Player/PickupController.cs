@@ -16,6 +16,7 @@ public class PickupController : MonoBehaviour
     [Header("Throw objects")]
     [SerializeField] private float throwPower = 500f;
     [SerializeField] private float throwBonusPower = 100f;
+    [SerializeField] private float throwBonusExponent = 1.05f;
     private PlayerMovementAdvanced playerMovement;
     private Rigidbody playerRB;
     private Vector2 playerInput;
@@ -24,9 +25,11 @@ public class PickupController : MonoBehaviour
 
     [Header("BEBUG")]
     [SerializeField] private bool DEBUG = false;
+    private LayerMask ignorePlayerBodyLayer;
 
     private void Awake()
     {
+        ignorePlayerBodyLayer = LayerMask.GetMask("IgnorePickUpRay");
         playerRB = GameObject.Find("Player").GetComponent<Rigidbody>();
         playerMovement = playerRB.transform.GetComponent<PlayerMovementAdvanced>();
     }
@@ -81,9 +84,12 @@ public class PickupController : MonoBehaviour
         {
             RaycastHit hit;
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward), Color.green, 2f);
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange))
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange, ~ignorePlayerBodyLayer))
             {
+
                 PickupObject(hit.transform.gameObject);
+                
+                
             }
         }
         else
@@ -105,6 +111,7 @@ public class PickupController : MonoBehaviour
             heldObj.transform.parent = null;
             playerInput = playerMovement.inputMove;
             float throwBonus = (throwBonusPower/playerMovement.walkSpeed) * playerRB.velocity.magnitude; //value 7 is the player sprint speed
+            throwBonus = Mathf.Pow(throwBonus, throwBonusExponent);
             Vector3 force = transform.forward * throwPower;
             Vector3 bonusForce = transform.forward * (throwBonus * playerInput.y) + transform.right * (throwBonus * playerInput.x);
             heldObjRB.AddForce(force + bonusForce, ForceMode.Force);

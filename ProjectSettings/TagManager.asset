@@ -16,7 +16,7 @@ TagManager:
   - whatIsGround
   - Ignore Render
   - PickeableObject
-  - 
+  - IgnorePickUpRay
   - 
   - 
   - 
