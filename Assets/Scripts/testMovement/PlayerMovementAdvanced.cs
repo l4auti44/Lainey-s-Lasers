@@ -46,7 +46,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask whatIsGround;
-    [HideInInspector] public bool grounded;
+    bool grounded;
 
     [Header("Slope Handling")]
     public float maxSlopeAngle;
@@ -267,7 +267,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     private void SpeedControl()
     {
         // limiting speed on slope
-        if (OnSlope() && !exitingSlope && grounded)
+        if (OnSlope() && !exitingSlope)
         {
             if (rb.velocity.magnitude > moveSpeed)
                 rb.velocity = rb.velocity.normalized * moveSpeed;
