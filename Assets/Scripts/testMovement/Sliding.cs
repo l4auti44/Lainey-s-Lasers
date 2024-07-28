@@ -64,7 +64,11 @@ public class Sliding : MonoBehaviour
         }
 
         playerObj.localScale = new Vector3(playerObj.localScale.x, slideYScale, playerObj.localScale.z);
-        rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
+        if (pm.grounded)
+        {
+            rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
+        }
+        
         
         
     }
@@ -73,22 +77,12 @@ public class Sliding : MonoBehaviour
     {
         Vector3 inputDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
-        // sliding normal
-        if(!pm.OnSlope() || rb.velocity.y > -0.1f)
-        {
-            rb.AddForce(inputDirection.normalized, ForceMode.Force);
-
-            //slideTimer -= Time.deltaTime;
-        }
-
         // sliding down a slope
-        else
+        if (pm.OnSlope() || rb.velocity.y < -0.1f)
         {
             rb.AddForce(pm.GetSlopeMoveDirection(inputDirection), ForceMode.Force);
         }
 
-        //if (slideTimer <= 0 && !pm.somethingAbove)
-            //StopSlide();
     }
 
     private void StopSlide()
