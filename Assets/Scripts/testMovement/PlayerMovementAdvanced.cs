@@ -150,10 +150,13 @@ public class PlayerMovementAdvanced : MonoBehaviour
             state = MovementState.sliding;
 
             if (OnSlope() && rb.velocity.y < 0.1f)
+            {
                 desiredMoveSpeed = maxSlopeSpeed;
-
+            }
             else
             {
+                //slide on ground
+
                 currentTimeCrouchBuff += Time.deltaTime;
 
                 float interpolation = currentTimeCrouchBuff / durationCrouchBuff;
@@ -166,7 +169,16 @@ public class PlayerMovementAdvanced : MonoBehaviour
                 desiredMoveSpeed = crouchSpeed + crouchBuff * exponentialChange;
                 //desiredMoveSpeed = sprintSpeed;
             }
-                
+
+            if (rb.velocity.magnitude <= crouchSpeed)
+            {
+                state = MovementState.crouching;
+                sliding = false;
+                crouching = true;
+                StopAllCoroutines();
+                moveSpeed = 0;
+                desiredMoveSpeed = crouchSpeed;
+            }
         }
 
         // Mode - Crouching
