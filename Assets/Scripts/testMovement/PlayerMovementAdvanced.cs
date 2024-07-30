@@ -59,6 +59,8 @@ public class PlayerMovementAdvanced : MonoBehaviour
     [HideInInspector] public Vector2 inputMove;
     private bool jumpingInput = false;
 
+    [Tooltip("How fast speed decay when you stand up from a slide")]
+    [SerializeField] private float WalkDecayMultiply = 5;
 
     Vector3 moveDirection;
 
@@ -235,11 +237,24 @@ public class PlayerMovementAdvanced : MonoBehaviour
             {
                 float slopeAngle = Vector3.Angle(Vector3.up, slopeHit.normal);
                 float slopeAngleIncrease = 1 + (slopeAngle / (slopeAngleChangeSpeed - slopeAngle));
+                if (state == MovementState.walking)
+                    time += Time.deltaTime * speedIncreaseMultiplier * slopeIncreaseMultiplier * slopeAngleIncrease * WalkDecayMultiply;
+                else
+                    time += Time.deltaTime * speedIncreaseMultiplier * slopeIncreaseMultiplier * slopeAngleIncrease;
 
-                time += Time.deltaTime * speedIncreaseMultiplier * slopeIncreaseMultiplier * slopeAngleIncrease;
+                
+
+                
             }
             else
-                time += Time.deltaTime * speedIncreaseMultiplier;
+            {
+                if (state == MovementState.walking)
+                    time += Time.deltaTime * speedIncreaseMultiplier * WalkDecayMultiply;
+                else
+                    time += Time.deltaTime * speedIncreaseMultiplier;
+                
+            }
+                
 
             yield return null;
         }
