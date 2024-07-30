@@ -276,9 +276,12 @@ public class PlayerMovementAdvanced : MonoBehaviour
     private void MovePlayer()
     {
         // calculate movement direction
+        
         if (sliding)
         {
-            moveDirection = orientation.forward * inputMove.y + orientation.right * inputMove.x * 0.3f;
+            float horizontalMultiplier = Mathf.Lerp(1f, 0.05f, moveSpeed / (maxSlopeSpeed - 5f));
+            if(DEBUG)Debug.Log(horizontalMultiplier);
+            moveDirection = orientation.forward * inputMove.y + orientation.right * inputMove.x * horizontalMultiplier;
         }
         else
         {
