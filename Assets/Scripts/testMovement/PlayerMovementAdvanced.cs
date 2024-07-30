@@ -237,10 +237,22 @@ public class PlayerMovementAdvanced : MonoBehaviour
             {
                 float slopeAngle = Vector3.Angle(Vector3.up, slopeHit.normal);
                 float slopeAngleIncrease = 1 + (slopeAngle / (slopeAngleChangeSpeed - slopeAngle));
-                if (state == MovementState.walking)
-                    time += Time.deltaTime * speedIncreaseMultiplier * slopeIncreaseMultiplier * slopeAngleIncrease * WalkDecayMultiply;
+                
+                if (rb.velocity.y <= 0)
+                {
+                    if (state == MovementState.walking)
+                        time += Time.deltaTime * speedIncreaseMultiplier * slopeIncreaseMultiplier * slopeAngleIncrease * WalkDecayMultiply;
+                    else
+                        time += Time.deltaTime * speedIncreaseMultiplier * slopeIncreaseMultiplier * slopeAngleIncrease;
+                }
                 else
-                    time += Time.deltaTime * speedIncreaseMultiplier * slopeIncreaseMultiplier * slopeAngleIncrease;
+                {
+                    if (state == MovementState.walking)
+                        time += Time.deltaTime * speedIncreaseMultiplier * slopeIncreaseMultiplier * slopeAngleIncrease * WalkDecayMultiply * 2f;
+                    else
+                        time += Time.deltaTime * speedIncreaseMultiplier * slopeIncreaseMultiplier * slopeAngleIncrease * 2f;
+                }
+                
 
                 
 
@@ -254,7 +266,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
                     time += Time.deltaTime * speedIncreaseMultiplier;
                 
             }
-                
 
             yield return null;
         }
