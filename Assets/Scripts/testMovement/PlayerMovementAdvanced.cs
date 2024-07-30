@@ -130,15 +130,10 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
 
         // stop crouch
-        if (!crouching && state != MovementState.crouching)
+        if ((crouching || sliding) && (state != MovementState.crouching || state != MovementState.sliding))
         {
             if (DEBUG) RotaryHeart.Lib.PhysicsExtension.Physics.SphereCast(transform.position, 0.5f, Vector3.up, playerHeight * 0.5f + 0.2f, preview: RotaryHeart.Lib.PhysicsExtension.PreviewCondition.Editor);
             somethingAbove = Physics.SphereCast(transform.position, 0.5f, Vector3.up, out RaycastHit hit, playerHeight * 0.5f + 0.2f);
-
-            if (!somethingAbove)
-            {
-                transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
-            }
         }
     }
 
