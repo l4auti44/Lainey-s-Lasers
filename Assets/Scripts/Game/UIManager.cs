@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class UIManager : MonoBehaviour
 {
@@ -14,15 +15,16 @@ public class UIManager : MonoBehaviour
     private GameObject lainey;
     private RawImage[] laineyStates;
     private GameObject resumeButton;
+    private GameObject restartButton;
 
     private void Awake()
     {
         resumeButton = GameObject.Find("ResumeButton");
+        restartButton = GameObject.Find("RestartButton");
         titlePauseMenu = GameObject.Find("TitlePauseMenu").GetComponent<TMP_Text>();
     }
     private void Start()
     {
-        
         lainey = GameObject.Find("Lainey");
         GetLaineyImages();
         DisableLaineyImages();
@@ -81,8 +83,10 @@ public class UIManager : MonoBehaviour
     }
     private void UpdateWinText(Component component)
     {
+        EventSystem.current.SetSelectedGameObject(restartButton);
+        resumeButton.GetComponent<Button>().interactable = false;
         titlePauseMenu.SetText("YOU WIN!");
-        resumeButton.SetActive(false);
+
     }
 
     private void UpdateHealth(Component component, float health)
