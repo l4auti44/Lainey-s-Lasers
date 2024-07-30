@@ -16,9 +16,6 @@ public class Sliding : MonoBehaviour
     public float slideYScale;
     private float startYScale;
 
-    [Header("Input")]
-    private float horizontalInput;
-    private float verticalInput;
 
     private bool slidingInput = false;
 
@@ -32,8 +29,6 @@ public class Sliding : MonoBehaviour
 
     private void Update()
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
 
         if (slidingInput && !pm.sliding && !pm.crouching)
             StartSlide();
@@ -46,7 +41,6 @@ public class Sliding : MonoBehaviour
     private void StartSlide()
     {
         
-
         if (rb.velocity.magnitude <= 0 && pm.state == PlayerMovementAdvanced.MovementState.idle)
         {
             pm.crouching = true;
@@ -57,7 +51,7 @@ public class Sliding : MonoBehaviour
             pm.sliding = true;
             pm.crouching = false;
         }
-
+        pm.playerHeight /= 2f;
         playerObj.localScale = new Vector3(playerObj.localScale.x, slideYScale, playerObj.localScale.z);
         if (pm.grounded)
         {
@@ -68,17 +62,13 @@ public class Sliding : MonoBehaviour
         
     }
 
-    private void SlidingMovement()
-    {
-
-    }
-
     private void StopSlide()
     {
         pm.sliding = false;
         pm.crouching = false;
         pm.currentTimeCrouchBuff = 0;
         playerObj.localScale = new Vector3(playerObj.localScale.x, startYScale, playerObj.localScale.z);
+        pm.playerHeight *=2f;
     }
 
     private void OnSliding()
