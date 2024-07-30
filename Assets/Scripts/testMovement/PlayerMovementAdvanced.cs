@@ -276,12 +276,21 @@ public class PlayerMovementAdvanced : MonoBehaviour
     private void MovePlayer()
     {
         // calculate movement direction
-        moveDirection = orientation.forward * inputMove.y + orientation.right * inputMove.x;
+        if (sliding)
+        {
+            moveDirection = orientation.forward * inputMove.y + orientation.right * inputMove.x * 0.3f;
+        }
+        else
+        {
+            moveDirection = orientation.forward * inputMove.y + orientation.right * inputMove.x;
+        }
+
 
         // on slope
         if (OnSlope() && !exitingSlope)
         {
             rb.AddForce(GetSlopeMoveDirection(moveDirection) * moveSpeed * 20f, ForceMode.Force);
+
 
             if (rb.velocity.y > 0)
                 rb.AddForce(Vector3.down * 80f, ForceMode.Force);

@@ -42,11 +42,6 @@ public class Sliding : MonoBehaviour
             StopSlide();
     }
 
-    private void FixedUpdate()
-    {
-        if (pm.sliding)
-            SlidingMovement();
-    }
 
     private void StartSlide()
     {
@@ -75,13 +70,6 @@ public class Sliding : MonoBehaviour
 
     private void SlidingMovement()
     {
-        Vector3 inputDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
-
-        // sliding down a slope
-        if (pm.OnSlope() || rb.velocity.y < -0.1f)
-        {
-            rb.AddForce(pm.GetSlopeMoveDirection(inputDirection), ForceMode.Force);
-        }
 
     }
 
