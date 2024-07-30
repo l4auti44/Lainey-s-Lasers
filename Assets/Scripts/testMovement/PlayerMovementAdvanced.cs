@@ -279,7 +279,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         
         if (sliding)
         {
-            float horizontalMultiplier = Mathf.Lerp(1f, 0.05f, moveSpeed / (maxSlopeSpeed - 5f));
+            float horizontalMultiplier = Mathf.Lerp(1.1f, 0.05f, moveSpeed / (maxSlopeSpeed - 5f));
             if(DEBUG)Debug.Log(horizontalMultiplier);
             moveDirection = orientation.forward * inputMove.y + orientation.right * inputMove.x * horizontalMultiplier;
         }
