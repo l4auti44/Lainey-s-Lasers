@@ -12,11 +12,39 @@ public class TeleportsForTest : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            transform.position = teleports[0].position;
+            if (teleports[0] != null)
+            {
+                transform.position = teleports[0].position;
+            }
+            else
+            {
+                Debug.Log("There is no teleport (transform.position) assigned in TeleportForTest.cs in Player GameObject");
+            }
+            
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            transform.position = teleports[1].position;
+            if (teleports[1] != null)
+            {
+                transform.position = teleports[1].position;
+            }
+            else
+            {
+                Debug.Log("There is no teleport (transform.position) assigned in TeleportForTest.cs in Player GameObject");
+            }
+
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            if (teleports[2] != null)
+            {
+                transform.position = teleports[2].position;
+            }
+            else
+            {
+                Debug.Log("There is no teleport (transform.position) assigned in TeleportForTest.cs in Player GameObject");
+            }
+
         }
     }
 }

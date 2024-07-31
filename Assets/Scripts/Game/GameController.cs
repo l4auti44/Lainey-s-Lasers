@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     private GameObject pauseMenu;
+    private GameObject resumeButton;
     [HideInInspector] public float timer;
 
 
@@ -18,6 +19,7 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
+        resumeButton = GameObject.Find("ResumeButton");
         pauseMenu = GameObject.Find("PauseMenu");
         Cursor.visible = false;
     }
@@ -41,6 +43,7 @@ public class GameController : MonoBehaviour
         if (SceneController.isPaused)
         {
             pauseMenu.SetActive(true);
+            EventSystem.current.SetSelectedGameObject(resumeButton);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
