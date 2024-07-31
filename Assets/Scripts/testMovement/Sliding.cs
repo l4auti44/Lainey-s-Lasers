@@ -55,7 +55,7 @@ public class Sliding : MonoBehaviour
         playerObj.localScale = new Vector3(playerObj.localScale.x, slideYScale, playerObj.localScale.z);
         if (pm.grounded)
         {
-            rb.AddForce(Vector3.down * 50f, ForceMode.Impulse);
+            rb.AddForce(Vector3.down * 20f, ForceMode.Impulse);
         }
         
         
