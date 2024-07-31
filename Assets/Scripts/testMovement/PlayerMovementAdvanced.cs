@@ -96,7 +96,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     private void Update()
     {
         // ground check
-        //if (DEBUG) RotaryHeart.Lib.PhysicsExtension.Physics.SphereCast(transform.position,radius: 0.5f,direction: Vector3.down, maxDistance: playerHeight * 0.4f, preview: RotaryHeart.Lib.PhysicsExtension.PreviewCondition.Editor, drawDuration: 0.1f) ;
+        if (DEBUG) RotaryHeart.Lib.PhysicsExtension.Physics.SphereCast(transform.position,radius: 0.5f,direction: Vector3.down, maxDistance: playerHeight * 0.4f, preview: RotaryHeart.Lib.PhysicsExtension.PreviewCondition.Editor, drawDuration: 0.1f) ;
         grounded = Physics.SphereCast(transform.position, 0.5f, Vector3.down, out RaycastHit hit, playerHeight * 0.4f, whatIsGround);
 
         MyInput();
