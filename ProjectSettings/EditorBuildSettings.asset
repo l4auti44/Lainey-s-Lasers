@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestRoom.unity
     guid: 697fa8110e307e546871dabee84f3076
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: 9cee556672b6c0a43be60404b9a3c245
   m_configObjects: {}
