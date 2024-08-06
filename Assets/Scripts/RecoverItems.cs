@@ -6,9 +6,9 @@ public class RecoverItems : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<DestructibleObject>())
+        if (collision.gameObject.GetComponent<RecoverableObject>())
         {
-            collision.gameObject.GetComponent<DestructibleObject>().ResetGameObject();
+            collision.gameObject.GetComponent<RecoverableObject>().ResetGameObject();
         }
     }
 }

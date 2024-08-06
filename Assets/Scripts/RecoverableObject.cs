@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class DestructibleObject : MonoBehaviour
+public class RecoverableObject : MonoBehaviour
 {
     private Vector3 startPosition;
     private Rigidbody _rb;

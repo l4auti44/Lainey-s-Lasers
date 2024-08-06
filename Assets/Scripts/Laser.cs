@@ -25,7 +25,8 @@ public class Laser : MonoBehaviour
     [SerializeField] private float timerForPush = 0.1f;
     private float _timerForPush;
     private string hitTag;
- 
+    private bool destroyObject = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +46,7 @@ public class Laser : MonoBehaviour
         
         if (Physics.SphereCast(ray, 0.1f, out hit, laserMaxDistance))
         {
-            if (firstRay)
+            if (firstRay || previousHit == null)
             {
                 previousHit = hit.transform.gameObject;
                 firstRay = false;
@@ -83,9 +84,13 @@ public class Laser : MonoBehaviour
                     break;
 
                 case "DestructibleObject":
-                    if (hit.transform.GetComponent<DestructibleObject>())
+                    if (hit.transform.GetComponent<RecoverableObject>())
                     {
-                        hit.transform.GetComponent<DestructibleObject>().ResetGameObject();
+                        hit.transform.GetComponent<RecoverableObject>().ResetGameObject();
+                    }
+                    else
+                    {
+                        destroyObject = true;
                     }
                     break;
 
@@ -108,8 +113,16 @@ public class Laser : MonoBehaviour
                 }
             }
 
-            previousHit = hit.transform.gameObject;
             
+            previousHit = hit.transform.gameObject;
+
+            if (destroyObject)
+            {
+                previousHit = null;
+                Destroy(hit.transform.gameObject);
+                destroyObject = false;
+            }
+
         }
         else
         {
