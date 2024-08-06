@@ -5172,6 +5172,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   grounded: 0
+  coyoteTime: 0.2
   maxSlopeAngle: 40
   slopeAngleChangeSpeed: 50
   orientation: {fileID: 1205371654}
@@ -17364,6 +17365,10 @@ PrefabInstance:
     - target: {fileID: 1874952702064863657, guid: e5a619be7cc55414c8502b7d3ab4fcc6, type: 3}
       propertyPath: m_Name
       value: Cube (big)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874952702064863657, guid: e5a619be7cc55414c8502b7d3ab4fcc6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3293383208372736060, guid: e5a619be7cc55414c8502b7d3ab4fcc6, type: 3}
       propertyPath: m_LocalPosition.x
