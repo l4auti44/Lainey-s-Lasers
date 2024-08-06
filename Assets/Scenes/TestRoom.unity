@@ -3430,7 +3430,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   grounded: 0
-  coyoteTime: 0.2
+  coyoteTime: 0.1
   maxSlopeAngle: 40
   slopeAngleChangeSpeed: 50
   orientation: {fileID: 992190688}
