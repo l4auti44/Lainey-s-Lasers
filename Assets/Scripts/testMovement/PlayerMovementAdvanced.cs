@@ -49,7 +49,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     [HideInInspector] public bool grounded;
     private bool groundedCheck;
     [Range(0.0f, 0.25f)]
-    [SerializeField] private float coyoteTime = 0.2f;
+    [SerializeField] private float coyoteTime = 0.1f;
     private float _coyoteTime;
 
     [Header("Slope Handling")]
@@ -109,11 +109,19 @@ public class PlayerMovementAdvanced : MonoBehaviour
         //COYOTE TIME
         if (!groundedCheck)
         {
-            _coyoteTime -= Time.deltaTime;
-            if (_coyoteTime <= 0)
+            if (readyToJump)
+            {
+                _coyoteTime -= Time.deltaTime;
+                if (_coyoteTime <= 0)
+                {
+                    grounded = false;
+                }
+            }
+            else
             {
                 grounded = false;
             }
+            
         }
         else
         {
