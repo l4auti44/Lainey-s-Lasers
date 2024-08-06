@@ -3430,12 +3430,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   grounded: 0
+  coyoteTime: 0.2
   maxSlopeAngle: 40
   slopeAngleChangeSpeed: 50
   orientation: {fileID: 992190688}
   inputMove: {x: 0, y: 0}
   WalkDecayMultiply: 5
-  DEBUG: 0
+  DEBUG: 1
   state: 0
   sliding: 0
 --- !u!114 &870404699

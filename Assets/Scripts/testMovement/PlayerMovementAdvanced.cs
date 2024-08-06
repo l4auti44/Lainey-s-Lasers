@@ -47,6 +47,10 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public float playerHeight;
     public LayerMask whatIsGround;
     [HideInInspector] public bool grounded;
+    private bool groundedCheck;
+    [Range(0.0f, 0.25f)]
+    [SerializeField] private float coyoteTime = 0.2f;
+    private float _coyoteTime;
 
     [Header("Slope Handling")]
     public float maxSlopeAngle;
@@ -82,8 +86,11 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
     public bool sliding;
 
+
+
     private void Start()
     {
+        _coyoteTime = coyoteTime;
         ignorePlayerBodyLayer = LayerMask.GetMask("IgnorePickUpRay");
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
@@ -97,7 +104,22 @@ public class PlayerMovementAdvanced : MonoBehaviour
     {
         // ground check
         if (DEBUG) RotaryHeart.Lib.PhysicsExtension.Physics.SphereCast(transform.position,radius: 0.5f,direction: Vector3.down, maxDistance: playerHeight * 0.4f, preview: RotaryHeart.Lib.PhysicsExtension.PreviewCondition.Editor, drawDuration: 0.1f) ;
-        grounded = Physics.SphereCast(transform.position, 0.45f, Vector3.down, out RaycastHit hit, playerHeight * 0.4f, whatIsGround);
+        groundedCheck = Physics.SphereCast(transform.position, 0.45f, Vector3.down, out RaycastHit hit, playerHeight * 0.4f, whatIsGround);
+
+        //COYOTE TIME
+        if (!groundedCheck)
+        {
+            _coyoteTime -= Time.deltaTime;
+            if (_coyoteTime <= 0)
+            {
+                grounded = false;
+            }
+        }
+        else
+        {
+            _coyoteTime = coyoteTime;
+            grounded = true;
+        }
 
         MyInput();
         SpeedControl();
