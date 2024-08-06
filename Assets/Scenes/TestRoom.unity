@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 63779224}
   - component: {fileID: 63779223}
   - component: {fileID: 63779222}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Incline (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8924,7 +8924,7 @@ GameObject:
   - component: {fileID: 2025459398}
   - component: {fileID: 2025459397}
   - component: {fileID: 2025459396}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Incline (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
