@@ -120,4 +120,23 @@ public class PickupController : MonoBehaviour
 
         }
     }
+    private void CheckIfObjectDestroy(Component component, string objectName)
+    {
+        if (heldObj)
+        {
+            if (heldObj.name == objectName)
+            {
+                DropObject();
+            }
+        }
+    }
+
+    private void OnEnable()
+    {
+        EventManager.Game.OnObjectDestroy += CheckIfObjectDestroy;
+    }
+    private void OnDisable()
+    {
+        EventManager.Game.OnObjectDestroy -= CheckIfObjectDestroy;
+    }
 }

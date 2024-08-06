@@ -20,6 +20,7 @@ public static class EventManager
     {
         public UnityAction<Component> OnWin;
         public UnityAction<Component> OnHitless;
+        public UnityAction<Component, string> OnObjectDestroy;
     }
     
 }

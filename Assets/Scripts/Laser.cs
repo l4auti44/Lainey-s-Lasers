@@ -24,6 +24,7 @@ public class Laser : MonoBehaviour
     private GameObject previousHit;
     [SerializeField] private float timerForPush = 0.1f;
     private float _timerForPush;
+    private string hitTag;
  
     // Start is called before the first frame update
     void Start()
@@ -50,43 +51,50 @@ public class Laser : MonoBehaviour
                 firstRay = false;
             }
             laserPivot.transform.localScale = new Vector3(1, hit.distance + 0.08f, 1); //0.08 is an offset that fixed laser visual bug (shortening)
-            // hit: Player
-            if (hit.transform.CompareTag("Player"))
+            hitTag = hit.transform.tag;
+            switch (hitTag)
             {
-                Transform playerPos = hit.transform.Find("Orientation").transform;
-                Vector3 forceDirection = playerPos.position - hit.point;
-                if (_timerForPush <= 0)
-                {
-                    hit.transform.GetComponent<Rigidbody>().AddForce(forceDirection * pushForce, ForceMode.Force);
-                    _timerForPush = timerForPush;
-                }
-                else
-                {
-                    _timerForPush -= Time.deltaTime;
-                }
+                case "Player":
+                    //HIT PLAYER
+                    Transform playerPos = hit.transform.Find("Orientation").transform;
+                    Vector3 forceDirection = playerPos.position - hit.point;
+                    if (_timerForPush <= 0)
+                    {
+                        hit.transform.GetComponent<Rigidbody>().AddForce(forceDirection * pushForce, ForceMode.Force);
+                        _timerForPush = timerForPush;
+                    }
+                    else
+                    {
+                        _timerForPush -= Time.deltaTime;
+                    }
 
 
-                if (!cooldown)
-                {
-                    //take hit
-                    hit.transform.GetComponent<HealthSystem>().TakeDamage(damage);
-                    cooldown = true;
-                }
-                
-                
-                    
-                
-                
+                    if (!cooldown)
+                    {
+                        //take hit
+                        hit.transform.GetComponent<HealthSystem>().TakeDamage(damage);
+                        cooldown = true;
+                    }
+                    break;
 
+                case "Target":
+                    hitingTarget = true;
+                    hit.transform.GetComponent<Target>().DoAction();
+                    break;
 
+                case "DestructibleObject":
+                    if (hit.transform.GetComponent<DestructibleObject>())
+                    {
+                        hit.transform.GetComponent<DestructibleObject>().ResetGameObject();
+                    }
+                    break;
+
+                default:
+                    break;
             }
-            //hit: Target
-            if (hit.transform.CompareTag("Target"))
-            {
-                hitingTarget = true;
-                hit.transform.GetComponent<Target>().DoAction();
-            }
-            else
+
+            
+            if (!hit.transform.CompareTag("Target"))
             {
                 hitingTarget = false;
             }
