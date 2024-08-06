@@ -43,7 +43,6 @@ public class GameController : MonoBehaviour
         if (SceneController.isPaused)
         {
             pauseMenu.SetActive(true);
-            EventSystem.current.SetSelectedGameObject(resumeButton);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
