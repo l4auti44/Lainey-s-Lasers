@@ -51,7 +51,7 @@ public class Laser : MonoBehaviour
                 previousHit = hit.transform.gameObject;
                 firstRay = false;
             }
-            laserPivot.transform.localScale = new Vector3(1, hit.distance, 1);
+            laserPivot.transform.localScale = new Vector3(1, hit.distance - 0.1f, 1);
             hitTag = hit.transform.tag;
             switch (hitTag)
             {
