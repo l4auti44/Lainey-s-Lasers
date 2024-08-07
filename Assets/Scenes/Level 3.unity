@@ -4463,7 +4463,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holdArea: {fileID: 527038352}
-  heldObj: {fileID: 0}
   pickupRange: 5
   pickupForce: 150
   throwPower: 450
@@ -14012,7 +14011,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube (Destructable) (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8131859581515761267, guid: a5936ed4d2a02314ea6a235cd3334b93, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
