@@ -11,7 +11,7 @@ public class MovingPlataformPhysics : MonoBehaviour
         {
             other.transform.parent.SetParent(transform);
         }
-        else
+        else if(other.gameObject.layer != 8) //8 layer is "PickeableObject"
         {
             other.transform.SetParent(transform);
         }
@@ -24,7 +24,7 @@ public class MovingPlataformPhysics : MonoBehaviour
         {
             other.transform.parent.SetParent(transform);
         }
-        else
+        else if (other.gameObject.layer != 8)
         {
             other.transform.SetParent(transform);
         }
@@ -36,7 +36,7 @@ public class MovingPlataformPhysics : MonoBehaviour
         {
             other.transform.parent.SetParent(null);
         }
-        else
+        else if (other.gameObject.layer != 8)
         {
             other.transform.SetParent(null);
         }
