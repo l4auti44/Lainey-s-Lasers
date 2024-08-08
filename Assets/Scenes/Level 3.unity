@@ -5660,6 +5660,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lainey
       objectReference: {fileID: 0}
+    - target: {fileID: 1437899212859021906, guid: a681eccfa6a40624180a70115334168c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 491.373
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437899212859021906, guid: a681eccfa6a40624180a70115334168c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 491.373
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437899212859021906, guid: a681eccfa6a40624180a70115334168c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -245.687
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437899212859021906, guid: a681eccfa6a40624180a70115334168c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 245.687
+      objectReference: {fileID: 0}
     - target: {fileID: 7082363813123705333, guid: a681eccfa6a40624180a70115334168c, type: 3}
       propertyPath: m_Name
       value: LCrouch
