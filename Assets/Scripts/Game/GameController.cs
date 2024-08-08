@@ -17,12 +17,15 @@ public class GameController : MonoBehaviour
     private HealthSystem healthSyst;
     private bool winCondition = false;
     private TMP_Text generalTimer;
+    private GameObject recordText;
 
     private void Awake()
     {
         resumeButton = GameObject.Find("ResumeButton");
         pauseMenu = GameObject.Find("PauseMenu");
         generalTimer = GameObject.Find("GeneralTimer").GetComponent<TMP_Text>();
+        recordText = GameObject.Find("RecordText");
+        recordText.SetActive(false);
         Cursor.visible = false;
     }
 
@@ -79,7 +82,27 @@ public class GameController : MonoBehaviour
         {
             EventManager.Game.OnHitless.Invoke(this);
         }
-        PlayerPrefs.SetFloat(SceneManager.GetActiveScene().name + " time", timer);
+
+
+        //TIME SCORE
+        var ts = TimeSpan.FromSeconds(timer);
+
+        if (PlayerPrefs.HasKey(SceneManager.GetActiveScene().name + " time"))
+        {
+            if (PlayerPrefs.GetFloat(SceneManager.GetActiveScene().name + " time") > timer)
+            {
+                recordText.SetActive(true);
+                recordText.GetComponent<TMP_Text>().text = "NEW RECORD!!\n" + string.Format("{0:00}:{1:00}", ts.Minutes, ts.Seconds);
+                PlayerPrefs.SetFloat(SceneManager.GetActiveScene().name + " time", timer);
+            }
+        }
+        else
+        {
+            recordText.SetActive(true);
+            recordText.GetComponent<TMP_Text>().text = "NEW RECORD!!\n" + string.Format("{0:00}:{1:00}", ts.Minutes, ts.Seconds);
+            PlayerPrefs.SetFloat(SceneManager.GetActiveScene().name + " time", timer);
+        }
+        
 
         //Time Achievement
         if (timer <= 30f)
