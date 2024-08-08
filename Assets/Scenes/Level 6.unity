@@ -123,6 +123,558 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &26110283
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &34415863
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.619999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &40789349
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &42875724
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &51018894
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.9199991
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &61708352
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &68831198
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &76141838
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &101087029
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,6 +842,144 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1001 &120831710
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &125107033
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &138345482
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +1052,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138345482}
   m_CullTransparentMesh: 1
+--- !u!1001 &203057678
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.19999981
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &210272481
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,6 +1199,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &212319760
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.190001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &253311031
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,6 +1343,351 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253311031}
   m_CullTransparentMesh: 1
+--- !u!1001 &309660381
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.9699993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &337384947
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &364372969
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &379642351
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.5800009
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &416459901
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &441859104
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +1824,144 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441859104}
   m_CullTransparentMesh: 1
+--- !u!1001 &455225831
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &458950005
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6500006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &511493197
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,6 +2148,213 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 1
+--- !u!1001 &528504853
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &551636981
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -168.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -96.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -26.84
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &596107612
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &599297650
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,7 +2415,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c70e075a2144ba04784d74b7b2889fd3, type: 2}
+  - {fileID: 2100000, guid: 6968e89851431104b8f931c37d69356b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -942,6 +2460,213 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 32}
+--- !u!1001 &617019310
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &722233912
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &744961087
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &755170800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,6 +2818,144 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a07208496e0a2e043925ac2872581bdf, type: 3}
+--- !u!1001 &903313084
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &918120112
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &945232180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,6 +3078,144 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &997102000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &1028258072
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1001 &1033820710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1350,6 +3351,75 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dcf04864ccc4b54a830df8f376fd4cb, type: 3}
+--- !u!1001 &1138401506
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &1171231033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1853,6 +3923,75 @@ MonoBehaviour:
       Data3: 1444456595
       Data4: -1289645780
     Path: event:/SFX/Player/Taking Damage
+--- !u!1001 &1273357468
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1001 &1289731241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1910,6 +4049,75 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f35d8299c62bc54dbfb4de042ae9d7f, type: 3}
+--- !u!1001 &1332567338
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.690001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &1344979787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1941,6 +4149,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 511493198}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1345273310
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.119999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1001 &1377176557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2166,6 +4443,75 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 42046292965421233, guid: 1761bf6ae86458741955c7071e92d7db, type: 3}
   m_PrefabInstance: {fileID: 1412244566}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1419568705
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &1420401001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2273,6 +4619,75 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420401001}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1433598750
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &1450662941
 GameObject:
   m_ObjectHideFlags: 0
@@ -2399,6 +4814,75 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1001 &1561576261
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &1704188839
 GameObject:
   m_ObjectHideFlags: 0
@@ -2433,6 +4917,351 @@ Transform:
   - {fileID: 2137298452}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1711622356
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &1718591775
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &1723734364
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1190033272812191895, guid: 082719420eef3424a9de1a0526b2192c, type: 3}
+      propertyPath: m_Name
+      value: ITEMSRECOVERY
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460864665921584372, guid: 082719420eef3424a9de1a0526b2192c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460864665921584372, guid: 082719420eef3424a9de1a0526b2192c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460864665921584372, guid: 082719420eef3424a9de1a0526b2192c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460864665921584372, guid: 082719420eef3424a9de1a0526b2192c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460864665921584372, guid: 082719420eef3424a9de1a0526b2192c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -698
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460864665921584372, guid: 082719420eef3424a9de1a0526b2192c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460864665921584372, guid: 082719420eef3424a9de1a0526b2192c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460864665921584372, guid: 082719420eef3424a9de1a0526b2192c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460864665921584372, guid: 082719420eef3424a9de1a0526b2192c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460864665921584372, guid: 082719420eef3424a9de1a0526b2192c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460864665921584372, guid: 082719420eef3424a9de1a0526b2192c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460864665921584372, guid: 082719420eef3424a9de1a0526b2192c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460864665921584372, guid: 082719420eef3424a9de1a0526b2192c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 082719420eef3424a9de1a0526b2192c, type: 3}
+--- !u!1001 &1725126507
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.1199999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &1737105035
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1001 &1756014935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2441,17 +5270,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -26.84
+      objectReference: {fileID: 0}
     - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.02
+      value: -181.3
       objectReference: {fileID: 0}
     - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.88
+      value: -106.1
       objectReference: {fileID: 0}
     - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0065202713
+      value: -4.9
       objectReference: {fileID: 0}
     - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2484,6 +5317,83 @@ PrefabInstance:
     - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
       propertyPath: m_Name
       value: Moving Platform With Laser
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.37
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &1757393537
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 18.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2597,6 +5507,144 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
+--- !u!1001 &1817886516
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &1835962128
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &1858940331
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,6 +5780,213 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858940331}
   m_CullTransparentMesh: 1
+--- !u!1001 &1860268133
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &1890791907
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &1897604192
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -26.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -156.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -89.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.37
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &2010228956
 GameObject:
   m_ObjectHideFlags: 0
@@ -2899,6 +6154,144 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029852132}
   m_CullTransparentMesh: 1
+--- !u!1001 &2089985336
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+--- !u!1001 &2106649525
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -134.51999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &2123323299
 GameObject:
   m_ObjectHideFlags: 0
@@ -3035,6 +6428,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123323299}
   m_CullTransparentMesh: 1
+--- !u!1001 &2125238007
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359148847513861535, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -251.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -141.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6797147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19490503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943396795435126507, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344729358486273289, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform With Laser (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893717567475117127, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871807051849111163, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7e03255987dd3244824ad29c04631a5, type: 3}
 --- !u!1 &2137298451
 GameObject:
   m_ObjectHideFlags: 0
@@ -3152,3 +6614,53 @@ SceneRoots:
   - {fileID: 859529299}
   - {fileID: 1289731241}
   - {fileID: 1756014935}
+  - {fileID: 551636981}
+  - {fileID: 1897604192}
+  - {fileID: 1138401506}
+  - {fileID: 1711622356}
+  - {fileID: 125107033}
+  - {fileID: 1332567338}
+  - {fileID: 337384947}
+  - {fileID: 212319760}
+  - {fileID: 997102000}
+  - {fileID: 42875724}
+  - {fileID: 1345273310}
+  - {fileID: 1561576261}
+  - {fileID: 1737105035}
+  - {fileID: 1718591775}
+  - {fileID: 34415863}
+  - {fileID: 1433598750}
+  - {fileID: 416459901}
+  - {fileID: 309660381}
+  - {fileID: 1817886516}
+  - {fileID: 1860268133}
+  - {fileID: 617019310}
+  - {fileID: 120831710}
+  - {fileID: 1028258072}
+  - {fileID: 455225831}
+  - {fileID: 1725126507}
+  - {fileID: 2106649525}
+  - {fileID: 2089985336}
+  - {fileID: 1419568705}
+  - {fileID: 596107612}
+  - {fileID: 918120112}
+  - {fileID: 40789349}
+  - {fileID: 2125238007}
+  - {fileID: 203057678}
+  - {fileID: 744961087}
+  - {fileID: 1757393537}
+  - {fileID: 1835962128}
+  - {fileID: 722233912}
+  - {fileID: 26110283}
+  - {fileID: 1890791907}
+  - {fileID: 1273357468}
+  - {fileID: 458950005}
+  - {fileID: 68831198}
+  - {fileID: 364372969}
+  - {fileID: 61708352}
+  - {fileID: 76141838}
+  - {fileID: 51018894}
+  - {fileID: 528504853}
+  - {fileID: 903313084}
+  - {fileID: 379642351}
+  - {fileID: 1723734364}
