@@ -16,11 +16,13 @@ public class GameController : MonoBehaviour
     private GameObject player;
     private HealthSystem healthSyst;
     private bool winCondition = false;
+    private TMP_Text generalTimer;
 
     private void Awake()
     {
         resumeButton = GameObject.Find("ResumeButton");
         pauseMenu = GameObject.Find("PauseMenu");
+        generalTimer = GameObject.Find("GeneralTimer").GetComponent<TMP_Text>();
         Cursor.visible = false;
     }
 
@@ -36,10 +38,8 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //GENERAL TIMER
-        timer += Time.deltaTime;
-        var ts = TimeSpan.FromSeconds(timer);
-        //generalTimer.text = string.Format("{0:00}:{1:00}", ts.Minutes, ts.Seconds);
+        UpdateGeneralTimer();
+
         if (SceneController.isPaused)
         {
             pauseMenu.SetActive(true);
@@ -54,6 +54,13 @@ public class GameController : MonoBehaviour
         }
 
 
+    }
+
+    private void UpdateGeneralTimer()
+    {
+        timer += Time.deltaTime;
+        var ts = TimeSpan.FromSeconds(timer);
+        generalTimer.text = string.Format("{0:00}:{1:00}", ts.Minutes, ts.Seconds);
     }
 
     public void Die()
@@ -72,6 +79,7 @@ public class GameController : MonoBehaviour
         {
             EventManager.Game.OnHitless.Invoke(this);
         }
+        PlayerPrefs.SetFloat(SceneManager.GetActiveScene().name + " time", timer);
 
         //Time Achievement
         if (timer <= 30f)
