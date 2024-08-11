@@ -72,7 +72,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
     private LayerMask ignorePlayerBodyLayer;
 
     [SerializeField] private bool DEBUG = false;
-    private Sliding slidingScript;
 
     [HideInInspector] public MovementState state;
     public enum MovementState
@@ -91,7 +90,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
     private void Start()
     {
-        slidingScript = GetComponent<Sliding>();
         _coyoteTime = coyoteTime;
         ignorePlayerBodyLayer = LayerMask.GetMask("IgnorePickUpRay");
         rb = GetComponent<Rigidbody>();
@@ -200,7 +198,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
                 //desiredMoveSpeed = sprintSpeed;
             }
 
-            if (rb.velocity.magnitude <= crouchSpeed && !slidingScript.forceSlide)
+            if (rb.velocity.magnitude <= crouchSpeed)
             {
                 state = MovementState.crouching;
                 sliding = false;
@@ -208,11 +206,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
                 StopAllCoroutines();
                 moveSpeed = 0;
                 desiredMoveSpeed = crouchSpeed;
-            }
-
-            if (slidingScript.forceSlide && rb.velocity.magnitude <= crouchSpeed)
-            {
-                moveSpeed = 0;
             }
         }
 
