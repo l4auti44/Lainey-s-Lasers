@@ -5081,6 +5081,18 @@ PrefabInstance:
       propertyPath: forceSlide
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3225611073670181368, guid: 936ebb2522221a94ba15ab31e5ef7858, type: 3}
+      propertyPath: jumpForce
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225611073670181368, guid: 936ebb2522221a94ba15ab31e5ef7858, type: 3}
+      propertyPath: maxSlopeSpeed
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225611073670181368, guid: 936ebb2522221a94ba15ab31e5ef7858, type: 3}
+      propertyPath: slopeIncreaseMultiplier
+      value: 0.48
+      objectReference: {fileID: 0}
     - target: {fileID: 7040860257740226570, guid: 936ebb2522221a94ba15ab31e5ef7858, type: 3}
       propertyPath: m_Name
       value: Player
@@ -5091,7 +5103,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7906316656408719525, guid: 936ebb2522221a94ba15ab31e5ef7858, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.24
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7906316656408719525, guid: 936ebb2522221a94ba15ab31e5ef7858, type: 3}
       propertyPath: m_LocalPosition.z
