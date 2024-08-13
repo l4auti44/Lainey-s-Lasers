@@ -5086,6 +5086,10 @@ PrefabInstance:
       value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 3225611073670181368, guid: 936ebb2522221a94ba15ab31e5ef7858, type: 3}
+      propertyPath: groundDrag
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225611073670181368, guid: 936ebb2522221a94ba15ab31e5ef7858, type: 3}
       propertyPath: maxSlopeSpeed
       value: 32
       objectReference: {fileID: 0}
