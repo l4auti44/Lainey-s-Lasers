@@ -1,5 +1,58 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2485036646929520788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7181323802387069727}
+  - component: {fileID: 8399762167643393614}
+  m_Layer: 0
+  m_Name: ForceSliding
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7181323802387069727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2485036646929520788}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.6613627, z: -0, w: 0.7500663}
+  m_LocalPosition: {x: 0, y: -3.937, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7906316656408719525}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8399762167643393614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2485036646929520788}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7040860257740226570
 GameObject:
   m_ObjectHideFlags: 0
@@ -39,6 +92,7 @@ Transform:
   - {fileID: 4823011438386381421}
   - {fileID: 2783470947524567972}
   - {fileID: 7320021263045599513}
+  - {fileID: 7181323802387069727}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &6507963157549871250
@@ -172,6 +226,8 @@ MonoBehaviour:
   orientation: {fileID: 2783470947524567972}
   playerObj: {fileID: 4823011438386381421}
   slideYScale: 0.5
+  forceSlide: 0
+  forceSlideGameObject: {fileID: 2485036646929520788}
 --- !u!114 &5552707266260739902
 MonoBehaviour:
   m_ObjectHideFlags: 0
