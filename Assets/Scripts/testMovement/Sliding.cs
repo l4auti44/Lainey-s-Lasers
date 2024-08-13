@@ -19,6 +19,15 @@ public class Sliding : MonoBehaviour
 
     private bool slidingInput = false;
 
+    [Header("Sliding levels")]
+    public bool forceSlide = false;
+    [SerializeField] private GameObject forceSlideGameObject;
+
+    private void Awake()
+    {
+        forceSlideGameObject.SetActive(false);
+    }
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -29,19 +38,26 @@ public class Sliding : MonoBehaviour
 
     private void Update()
     {
+        if (forceSlide)
+        {
+            slidingInput = true;
+            forceSlideGameObject.SetActive(true);
+        }
 
         if (slidingInput && !pm.sliding && !pm.crouching)
             StartSlide();
 
         if (!slidingInput && (pm.sliding || pm.crouching) && !pm.somethingAbove)
             StopSlide();
+
+        
     }
 
 
     private void StartSlide()
     {
         
-        if (rb.velocity.magnitude <= 0 && pm.state == PlayerMovementAdvanced.MovementState.idle)
+        if (rb.velocity.magnitude <= 0 && pm.state == PlayerMovementAdvanced.MovementState.idle && !forceSlide)
         {
             pm.crouching = true;
             pm.sliding = false;

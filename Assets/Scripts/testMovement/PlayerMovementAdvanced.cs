@@ -72,6 +72,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     private LayerMask ignorePlayerBodyLayer;
 
     [SerializeField] private bool DEBUG = false;
+    private Sliding slidingScript;
 
     [HideInInspector] public MovementState state;
     public enum MovementState
@@ -90,6 +91,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
     private void Start()
     {
+        slidingScript = GetComponent<Sliding>();
         _coyoteTime = coyoteTime;
         ignorePlayerBodyLayer = LayerMask.GetMask("IgnorePickUpRay");
         rb = GetComponent<Rigidbody>();
@@ -180,6 +182,13 @@ public class PlayerMovementAdvanced : MonoBehaviour
             if (OnSlope() && rb.velocity.y < 0.1f)
             {
                 desiredMoveSpeed = maxSlopeSpeed;
+                if (inputMove.y == 0)
+                {
+                    moveSpeed = rb.velocity.magnitude;
+                    lastDesiredMoveSpeed = 0;
+                    StopAllCoroutines();
+                    StartCoroutine(SmoothlyLerpMoveSpeed());
+                }
             }
             else
             {
@@ -198,7 +207,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
                 //desiredMoveSpeed = sprintSpeed;
             }
 
-            if (rb.velocity.magnitude <= crouchSpeed)
+            if (rb.velocity.magnitude <= crouchSpeed && !slidingScript.forceSlide)
             {
                 state = MovementState.crouching;
                 sliding = false;
@@ -237,7 +246,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         }
 
         // check if desiredMoveSpeed has changed drastically
-        if(Mathf.Abs(desiredMoveSpeed - lastDesiredMoveSpeed) > 4f && moveSpeed != 0)
+        if(Mathf.Abs(desiredMoveSpeed - lastDesiredMoveSpeed) > 4f)
         {
             StopAllCoroutines();
             StartCoroutine(SmoothlyLerpMoveSpeed());
