@@ -24,12 +24,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878786438586712583}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5988572176931299258}
+  m_Father: {fileID: 1622192991424786770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1942974403040515718
 GameObject:
@@ -65,8 +65,6 @@ Transform:
   - {fileID: 6096227120738448736}
   - {fileID: 4576131168882015962}
   - {fileID: 8927688900705640818}
-  - {fileID: 8222871175028807164}
-  - {fileID: 6252660375040544170}
   m_Father: {fileID: 1622192991424786770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2970944579525318109
@@ -81,8 +79,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7b324bff85571b45b2f963fd7ba9157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
+  pointA: {fileID: 8222871175028807164}
+  pointB: {fileID: 6252660375040544170}
   speed: 1
 --- !u!1 &3800932593811157293
 GameObject:
@@ -114,6 +112,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5988572176931299258}
+  - {fileID: 8222871175028807164}
+  - {fileID: 6252660375040544170}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3935642474178202505
@@ -140,12 +140,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3935642474178202505}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5988572176931299258}
+  m_Father: {fileID: 1622192991424786770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2864054315250453683
 PrefabInstance:
