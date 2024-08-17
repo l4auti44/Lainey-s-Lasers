@@ -51,8 +51,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.6, y: 0.6, z: 0.6}
+  m_Center: {x: -0.00336808, y: -0.13444614, z: -0.036891654}
 --- !u!1 &7040860257740226570
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,7 +203,6 @@ MonoBehaviour:
     m_Bits: 64
   grounded: 0
   coyoteTime: 0.1
-  _coyoteTime: 0
   maxSlopeAngle: 40
   slopeAngleChangeSpeed: 50
   orientation: {fileID: 2783470947524567972}
