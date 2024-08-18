@@ -36,12 +36,18 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1f;
         pauseMenu.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
+        if (!PlayerPrefs.HasKey("showTimer"))
+        {
+            PlayerPrefs.SetInt("showTimer", 1);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         UpdateGeneralTimer();
+
+        
 
         if (SceneController.isPaused)
         {
@@ -63,7 +69,17 @@ public class GameController : MonoBehaviour
     {
         timer += Time.deltaTime;
         var ts = TimeSpan.FromSeconds(timer);
-        generalTimer.text = string.Format("{0:00}:{1:00}", ts.Minutes, ts.Seconds);
+
+        if (PlayerPrefs.GetInt("showTimer") == 1)
+        {
+            generalTimer.transform.parent.gameObject.SetActive(true);
+            generalTimer.text = string.Format("{0:00}:{1:00}", ts.Minutes, ts.Seconds);
+        }
+        else
+        {
+            generalTimer.transform.parent.gameObject.SetActive(false);
+        }
+        
     }
 
     public void Die()
