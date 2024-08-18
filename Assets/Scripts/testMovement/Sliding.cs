@@ -69,7 +69,7 @@ public class Sliding : MonoBehaviour
         }
         pm.playerHeight /= 2f;
         playerObj.localScale = new Vector3(playerObj.localScale.x, slideYScale, playerObj.localScale.z);
-        if (pm.grounded)
+        if (pm.grounded && !pm.isCoyoteTime)
         {
             rb.AddForce(Vector3.down * 20f, ForceMode.Impulse);
         }

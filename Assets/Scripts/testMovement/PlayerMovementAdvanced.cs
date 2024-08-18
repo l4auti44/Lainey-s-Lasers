@@ -51,6 +51,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     [Range(0.0f, 0.25f)]
     [SerializeField] private float coyoteTime = 0.1f;
     private float _coyoteTime;
+    [HideInInspector] public bool isCoyoteTime = false;
 
     [Header("Slope Handling")]
     public float maxSlopeAngle;
@@ -108,19 +109,25 @@ public class PlayerMovementAdvanced : MonoBehaviour
         if (DEBUG) RotaryHeart.Lib.PhysicsExtension.Physics.SphereCast(transform.position,radius: 0.5f,direction: Vector3.down, maxDistance: playerHeight * 0.4f, preview: RotaryHeart.Lib.PhysicsExtension.PreviewCondition.Editor, drawDuration: 0.1f) ;
         groundedCheck = Physics.SphereCast(transform.position, 0.45f, Vector3.down, out RaycastHit hit, playerHeight * 0.4f, whatIsGround);
 
-        //COYOTE TIME
+        
         if (!groundedCheck)
         {
             if (readyToJump)
             {
+                //COYOTE TIME
                 _coyoteTime -= Time.deltaTime;
                 if (_coyoteTime <= 0)
                 {
+                    isCoyoteTime = false;
                     grounded = false;
                 }
+                else
+                    isCoyoteTime = true;
+                
             }
             else
             {
+                isCoyoteTime = false;
                 grounded = false;
             }
             
@@ -128,6 +135,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         else
         {
             _coyoteTime = coyoteTime;
+            isCoyoteTime = false;
             grounded = true;
         }
 
