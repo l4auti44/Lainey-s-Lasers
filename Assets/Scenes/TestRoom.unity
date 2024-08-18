@@ -4802,18 +4802,6 @@ PrefabInstance:
       propertyPath: cameraPosition
       value: 
       objectReference: {fileID: 1867439699}
-    - target: {fileID: 6435520229976666204, guid: 496f0f247d38d064597d9b9fe37c5484, type: 3}
-      propertyPath: throwPower
-      value: 400
-      objectReference: {fileID: 0}
-    - target: {fileID: 6435520229976666204, guid: 496f0f247d38d064597d9b9fe37c5484, type: 3}
-      propertyPath: throwBonusPower
-      value: 320
-      objectReference: {fileID: 0}
-    - target: {fileID: 6435520229976666204, guid: 496f0f247d38d064597d9b9fe37c5484, type: 3}
-      propertyPath: throwBonusExponent
-      value: 1.06
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
