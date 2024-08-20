@@ -17,11 +17,20 @@ public class UIManager : MonoBehaviour
     private GameObject resumeButton;
     private GameObject restartButton;
 
+    [SerializeField] private GameObject[] tutorials;
+
     private void Awake()
     {
         resumeButton = GameObject.Find("ResumeButton");
         restartButton = GameObject.Find("RestartButton");
         titlePauseMenu = GameObject.Find("TitlePauseMenu").GetComponent<TMP_Text>();
+        if (tutorials.Length > 0)
+        {
+            foreach(var tuto in tutorials)
+            {
+                tuto.SetActive(false);
+            }
+        }
     }
     private void Start()
     {
@@ -62,6 +71,7 @@ public class UIManager : MonoBehaviour
         
         EventManager.Game.OnWin += UpdateWinText;
         EventManager.Game.OnHitless += HitlessCondition;
+        EventManager.Game.OnTutorialTrigger += UpdateTutorial;
     }
 
     private void OnDisable()
@@ -74,6 +84,7 @@ public class UIManager : MonoBehaviour
 
         EventManager.Game.OnWin -= UpdateWinText;
         EventManager.Game.OnHitless -= HitlessCondition;
+        EventManager.Game.OnTutorialTrigger -= UpdateTutorial;
     }
 
     private void HitlessCondition(Component component)
@@ -112,6 +123,19 @@ public class UIManager : MonoBehaviour
     private void UpdateSpeed(Component component, float speed)
     {
         speedLabel.SetText(speed.ToString("0.00"));
+    }
+
+    private void UpdateTutorial(Component component, int num)
+    {
+        foreach (var tutorial in tutorials)
+        {
+            tutorial.SetActive(false);
+        }
+        if (num != -1)
+        {
+            tutorials[num].SetActive(true);
+        }
+        
     }
 
     private void UpdateLaineyImage(Component component, PlayerMovementAdvanced.MovementState state)
