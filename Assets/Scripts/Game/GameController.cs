@@ -96,6 +96,7 @@ public class GameController : MonoBehaviour
     {
         if (healthSyst.playerHealth == 100f)
         {
+            PlayerPrefs.SetInt(SceneManager.GetActiveScene().name + " Hitless", 1);
             EventManager.Game.OnHitless.Invoke(this);
         }
 
