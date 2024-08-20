@@ -71,6 +71,7 @@ public class UIManager : MonoBehaviour
         EventManager.Player.OnMovementStateChanged += UpdateLaineyImage;
         
         EventManager.Game.OnWin += UpdateWinText;
+        EventManager.Game.OnDie += UpdateTextOnDie;
         EventManager.Game.OnHitless += HitlessCondition;
         EventManager.Game.OnTutorialTrigger += UpdateTutorial;
     }
@@ -84,6 +85,7 @@ public class UIManager : MonoBehaviour
         EventManager.Player.OnMovementStateChanged -= UpdateLaineyImage;
 
         EventManager.Game.OnWin -= UpdateWinText;
+        EventManager.Game.OnDie -= UpdateTextOnDie;
         EventManager.Game.OnHitless -= HitlessCondition;
         EventManager.Game.OnTutorialTrigger -= UpdateTutorial;
     }
@@ -140,6 +142,11 @@ public class UIManager : MonoBehaviour
             tutorials[num].SetActive(true);
         }
         
+    }
+
+    private void UpdateTextOnDie(Component component)
+    {
+        titlePauseMenu.SetText("YOU DIED!");
     }
 
     private void UpdateLaineyImage(Component component, PlayerMovementAdvanced.MovementState state)
