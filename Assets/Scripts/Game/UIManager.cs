@@ -118,7 +118,7 @@ public class UIManager : MonoBehaviour
 
     private void TakingDamage(Component component)
     {
-        damageIndicator.color = new Color(255, 255, 255, 0.25f);
+        damageIndicator.color = new Color(255, 255, 255, 0.4f);
     }
 
     private void NoTakingDamage(Component component)
