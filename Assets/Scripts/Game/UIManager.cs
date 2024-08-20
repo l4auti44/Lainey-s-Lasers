@@ -16,11 +16,12 @@ public class UIManager : MonoBehaviour
     private RawImage[] laineyStates;
     private GameObject resumeButton;
     private GameObject restartButton;
-
+    private Slider healthBar;
     [SerializeField] private GameObject[] tutorials;
 
     private void Awake()
     {
+        healthBar = GameObject.Find("HealthBar").GetComponent<Slider>();
         resumeButton = GameObject.Find("ResumeButton");
         restartButton = GameObject.Find("RestartButton");
         titlePauseMenu = GameObject.Find("TitlePauseMenu").GetComponent<TMP_Text>();
@@ -103,6 +104,9 @@ public class UIManager : MonoBehaviour
     private void UpdateHealth(Component component, float health)
     {
         healthLabel.SetText(health.ToString());
+        healthBar.value = health / 100f;
+
+
         if (health <= 0)
         {
             DisableLaineyImages();
