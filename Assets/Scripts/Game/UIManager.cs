@@ -7,7 +7,6 @@ using UnityEngine.EventSystems;
 
 public class UIManager : MonoBehaviour
 {
-    private TMP_Text healthLabel;
     private TMP_Text speedLabel;
     private TMP_Text stateLabel;
     private TMP_Text titlePauseMenu;
@@ -38,7 +37,6 @@ public class UIManager : MonoBehaviour
         lainey = GameObject.Find("Lainey");
         GetLaineyImages();
         DisableLaineyImages();
-        healthLabel = GameObject.Find("HealthLabel").GetComponent<TMP_Text>();
         speedLabel = GameObject.Find("SpeedLabel").GetComponent<TMP_Text>();
         stateLabel = GameObject.Find("StateLabel").GetComponent<TMP_Text>();
         damageIndicator = GameObject.Find("DamageIndicator").GetComponent<RawImage>();
@@ -105,7 +103,6 @@ public class UIManager : MonoBehaviour
 
     private void UpdateHealth(Component component, float health)
     {
-        healthLabel.SetText(health.ToString());
         healthBar.value = health / 100f;
 
 
