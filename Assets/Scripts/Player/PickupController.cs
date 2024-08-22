@@ -80,22 +80,26 @@ public class PickupController : MonoBehaviour
 
     private void OnPickUpPutDown()
     {
-        if (heldObj == null)
+        if (!SceneController.isPaused)
         {
-            RaycastHit hit;
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward), Color.green, 2f);
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange, ~ignorePlayerBodyLayer))
+            if (heldObj == null)
             {
+                RaycastHit hit;
+                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward), Color.green, 2f);
+                if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange, ~ignorePlayerBodyLayer))
+                {
 
-                PickupObject(hit.transform.gameObject);
-                
-                
+                    PickupObject(hit.transform.gameObject);
+
+
+                }
+            }
+            else
+            {
+                DropObject();
             }
         }
-        else
-        {
-            DropObject();
-        }
+        
     }
 
     private void OnThrow()
