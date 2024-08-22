@@ -335,7 +335,18 @@ public partial class @InputSystem_PlayerControls: IInputActionCollection2, IDisp
                 {
                     ""name"": """",
                     ""id"": ""91cd1751-3e7e-4b86-9a12-9d15e2748b76"",
-                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sliding"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e2bfe066-5b0b-48ac-bb0b-da9d84b53af2"",
+                    ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
