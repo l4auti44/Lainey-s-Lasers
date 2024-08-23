@@ -778,6 +778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PostProcessing Volume
       objectReference: {fileID: 0}
+    - target: {fileID: 8696172822473250652, guid: 6f5c54e201e07e842b9ac4a121638dd2, type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: 9da050f58915cf94e94765e23a911981, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
