@@ -2485,7 +2485,7 @@ Animation:
   m_GameObject: {fileID: 712041386}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 0}
+  m_Animation: {fileID: 7400000, guid: 7321f9d8e8532eb47911765007443221, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 7321f9d8e8532eb47911765007443221, type: 2}
   m_WrapMode: 0
@@ -7330,7 +7330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1970815095
 RectTransform:
   m_ObjectHideFlags: 0
