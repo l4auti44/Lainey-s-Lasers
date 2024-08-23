@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 374850594645545410, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
       propertyPath: InitialModule.startColor.minColor.g
-      value: 0.93041754
+      value: 0.8631069
       objectReference: {fileID: 0}
     - target: {fileID: 374850594645545410, guid: cc3cf7caebe78f14591682141a0c31ff, type: 3}
       propertyPath: InitialModule.startColor.minColor.r
