@@ -114,7 +114,8 @@ public class PickupController : MonoBehaviour
             heldObj.layer = previuosLayer;
             heldObj.transform.parent = null;
             playerInput = playerMovement.inputMove;
-            float throwBonus = (throwBonusPower/playerMovement.walkSpeed) * playerRB.velocity.magnitude; //value 7 is the player sprint speed
+            var playerVel = new Vector3(playerRB.velocity.x, 0, playerRB.velocity.z);
+            float throwBonus = (throwBonusPower/playerMovement.walkSpeed) * playerVel.magnitude;
             throwBonus = Mathf.Pow(throwBonus, throwBonusExponent);
             Vector3 force = transform.forward * throwPower;
             Vector3 bonusForce = transform.forward * (throwBonus * playerInput.y) + transform.right * (throwBonus * playerInput.x);
