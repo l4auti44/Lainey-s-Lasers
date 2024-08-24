@@ -11,6 +11,7 @@ public class HealthSystem : MonoBehaviour
     private bool isTakingDamage = false;
     [SerializeField] private float invincibilityTime = 1f;
     private float _invicibilityTime;
+    private bool died = false;
     
 
 
@@ -36,22 +37,23 @@ public class HealthSystem : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-
-        EventManager.Player.OnTakingDamage.Invoke(this);
-        if (DEBUG) Debug.Log("taking damage");
-        playerHealth -= damage;
-        if (playerHealth < 0)
+        if (!died)
         {
-            playerHealth = 0;
+            EventManager.Player.OnTakingDamage.Invoke(this);
+            if (DEBUG) Debug.Log("taking damage");
+            playerHealth -= damage;
+            if (playerHealth < 0)
+            {
+                playerHealth = 0;
+            }
+            EventManager.Player.OnHealthChanged.Invoke(this, playerHealth);
+            isTakingDamage = true;
+            if (playerHealth <= 0)
+            {
+                Die();
+                playerHealth = 0;
+            }
         }
-        EventManager.Player.OnHealthChanged.Invoke(this, playerHealth);
-        isTakingDamage = true;
-        if (playerHealth <= 0)
-        {
-            Die();
-            playerHealth = 0;
-        }
-        
     }
     
     public void Heal(float amount)
@@ -62,6 +64,7 @@ public class HealthSystem : MonoBehaviour
     
     private void Die()
     {
+        died = true;
         if (DEBUG) Debug.Log("Player Died!");
         EventManager.Game.OnDie.Invoke(this);
         GameObject.Find("GameManager").GetComponent<GameController>().Die();
