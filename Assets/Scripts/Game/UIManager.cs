@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     private TMP_Text speedLabel;
     private TMP_Text stateLabel;
     private TMP_Text titlePauseMenu;
+    private TMP_Text FPS;
     private RawImage damageIndicator;
     private GameObject lainey;
     private RawImage[] laineyStates;
@@ -39,6 +40,7 @@ public class UIManager : MonoBehaviour
         DisableLaineyImages();
         speedLabel = GameObject.Find("SpeedLabel").GetComponent<TMP_Text>();
         stateLabel = GameObject.Find("StateLabel").GetComponent<TMP_Text>();
+        FPS = GameObject.Find("FPS").GetComponent<TMP_Text>();
         damageIndicator = GameObject.Find("DamageIndicator").GetComponent<RawImage>();
         damageIndicator.color = new Color(255, 255, 255, 0f);
     }
@@ -177,5 +179,10 @@ public class UIManager : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    private void Update()
+    {
+        FPS.SetText(Mathf.Floor(1f / Time.deltaTime).ToString());
     }
 }
