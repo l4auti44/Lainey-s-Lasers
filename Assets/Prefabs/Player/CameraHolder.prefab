@@ -211,9 +211,9 @@ MonoBehaviour:
   holdArea: {fileID: 4824522532377387181}
   pickupRange: 5
   pickupForce: 150
-  throwPower: 369
-  throwBonusPower: 308
-  throwBonusExponent: 1.1
+  throwPower: 345
+  throwBonusPower: 140
+  throwBonusExponent: 1.19
   DEBUG: 1
 --- !u!114 &6011569387836236295
 MonoBehaviour:
