@@ -40,6 +40,10 @@ public class CheckHitlessLevels : MonoBehaviour
                     underTime.texture = noAchievement;
                 }
             }
+            else
+            {
+                underTime.texture = noAchievement;
+            }
         }
     }
 
