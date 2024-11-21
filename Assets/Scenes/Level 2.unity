@@ -6853,8 +6853,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -686, y: -85.54086}
-  m_SizeDelta: {x: 456.89008, y: 321.1183}
+  m_AnchoredPosition: {x: -699.5571, y: 18.600159}
+  m_SizeDelta: {x: 429.7743, y: 529.39966}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!111 &1966950982
 Animation:
@@ -7429,8 +7429,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -159, y: 174.9}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -159, y: 269}
+  m_SizeDelta: {x: 184.47, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2117883758
 MonoBehaviour:
@@ -7454,11 +7454,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Lasers will push and damage you if you touch them.
 
+
     The amount of
     damage and knockback depends on the laser''s color.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: aa8011ff543fc2a4b8385df4ca976a0e, type: 2}
+  m_sharedMaterial: {fileID: -5868708748489741586, guid: aa8011ff543fc2a4b8385df4ca976a0e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
