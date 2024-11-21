@@ -9,7 +9,10 @@ public class SceneController : MonoBehaviour
 {
     public static SceneController Instance;
 
-    public static bool isPaused = false;
+    
+   public static bool isPaused = false;
+
+    
     private void Awake()
     {
         if (Instance != null)
@@ -55,5 +58,8 @@ public class SceneController : MonoBehaviour
         }
     }
 
-
+    public static void ResetPlayerPrefs()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }
